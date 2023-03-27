@@ -1,19 +1,23 @@
 import Image from "next/image";
+import { GiBackpack } from "react-icons/gi";
 
 const Navbar = () => {
   return (
-    <nav className="py-6 px-14  border-b-2 shadow-sm flex justify-between items-center bg-white">
+    <nav className="mb-[56px] py-5 border-b-[1px] flex justify-between items-center">
       <div className="flex items-center">
         <Image
-          className="mr-2.5"
+          className="mr-[2px]"
           src="/../public/logo.jpg"
           width={30}
           height={30}
           alt="logo"
         />
-        <h3 className="text-xl font-bold">Raj Thombare</h3>
+        <h3 className="text-[32px] font-bold">AJ</h3>
       </div>
-      <ul className="flex">
+      <div className="md:hidden cursor-pointer">
+        <GiBackpack size={35} />
+      </div>
+      <ul className="hidden md:block md:flex">
         <li>
           <a href="">Home</a>
         </li>
