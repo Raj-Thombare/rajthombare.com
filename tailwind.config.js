@@ -12,7 +12,7 @@ module.exports = {
     extend: {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
-        slab: ['Roboto Slab', 'serif']
+        slab: ['Roboto Slab', 'serif'],
       }
     },
   },

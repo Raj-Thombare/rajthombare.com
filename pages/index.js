@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Navbar from '@/components/Navbar'
-import Intro from '@/components/Intro'
+import Header from '@/components/Header'
 
 export default function Home() {
   return (
@@ -11,9 +11,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='mx-10 md:mx-[18%]'>
+      <main>
         <Navbar />
-        <Intro />
+        <Header />
 
         <p className='font-slab font-light break-all mt-5'>
           As a Junior Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS, JavaScipt, React, Tailwind, and SCSS. I excel in designing and maintaining responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques. I am also a team player who thrives in collaborating with cross-functional teams to produce outstanding web applications.

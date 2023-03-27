@@ -4,10 +4,10 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { CgTwitter } from "react-icons/cg";
 import { DiGithubFull } from "react-icons/di";
 
-const Intro = () => {
+const Header = () => {
   return (
-    <div className="w-[100%] pt-[160px] h-screen text-center md:text-left flex justify-end md:justify-between flex-col-reverse md:flex-row items-center md:items-start">
-      <div className="md:w-[60%]">
+    <div className="w-[100%] pt-[50px] px-10 h-screen text-center md:text-left flex justify-end md:justify-between flex-col-reverse md:flex-row items-center md:items-start">
+      <div className="md:w-[60%] pt-7">
         <h1 className="mb-8 text-5xl md:text-6xl  font-bold mt-6 md:mt-0 text-[#2d2e32]">
           Full Stack Software Engineer
         </h1>
@@ -33,7 +33,7 @@ const Intro = () => {
       <Image
         src={MyPicture}
         alt="my picture"
-        className="rounded-full md:w-[30%]"
+        className="rounded-full md:w-[35%]"
         priority
         width={200}
         height={200}
@@ -42,4 +42,4 @@ const Intro = () => {
   );
 };
 
-export default Intro;
+export default Header;

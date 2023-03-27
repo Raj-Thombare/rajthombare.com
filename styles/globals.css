@@ -12,6 +12,8 @@
 
   body {
     background-color: #f9f9f9;
+    max-width: 800px;
+      margin: auto;
   }
 
   li {
