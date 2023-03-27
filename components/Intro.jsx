@@ -1,12 +1,10 @@
 import Image from "next/image";
-import { BsLinkedin } from "react-icons/bs";
+import MyPicture from "../public/picture.jpg";
 import { FaLinkedinIn } from "react-icons/fa";
 import { CgTwitter } from "react-icons/cg";
-import { AiOutlineTwitter } from "react-icons/ai";
-import { BsGithub } from "react-icons/bs";
 import { DiGithubFull } from "react-icons/di";
 
-const Home = () => {
+const Intro = () => {
   return (
     <div className="w-[100%] text-center md:text-left flex flex-col-reverse md:flex-row items-center md:items-start justify-evenly">
       <div className="md:w-[60%]">
@@ -18,21 +16,22 @@ const Home = () => {
           Maharashtra.
         </p>
         <div className="w-[40%] flex justify-between">
-          <a href="https://github.com/raj-thombare" target="_blank"> 
+          <a href="https://github.com/raj-thombare" target="_blank">
             <DiGithubFull size={30} />
           </a>
           <a href="https://linkedin.com/in/rajthombare" target="_blank">
-          <FaLinkedinIn size={30} />
+            <FaLinkedinIn size={30} />
           </a>
           <a href="https://twitter.com/saysrakaa" target="_blank">
-          <CgTwitter size={30} />
+            <CgTwitter size={30} />
           </a>
         </div>
       </div>
       <Image
-        src="/../public/profile.jpg"
-        alt="hero image"
+        src={MyPicture}
+        alt="my picture"
         className="rounded-full md:w-[30%]"
+        priority
         width={200}
         height={200}
       />
@@ -40,4 +39,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Intro;

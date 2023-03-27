@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Logo from "../public/logo.jpg";
 import { GiBackpack } from "react-icons/gi";
 
 const Navbar = () => {
@@ -7,10 +8,11 @@ const Navbar = () => {
       <div className="flex items-center">
         <Image
           className="mr-[2px]"
-          src="/../public/logo.jpg"
+          src={Logo}
           width={30}
           height={30}
           alt="logo"
+          priority
         />
         <h3 className="text-[32px] font-bold">AJ</h3>
       </div>
