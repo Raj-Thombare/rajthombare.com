@@ -4,7 +4,7 @@ import { GiBackpack } from "react-icons/gi";
 
 const Navbar = () => {
   return (
-    <nav className="mb-[56px] py-5 border-b-[1px] flex justify-between items-center">
+    <nav className="py-5 border-b-[1px] flex justify-between items-center fixed top-0 bg-[#f9f9f9] overflow-y-hidden">
       <div className="flex items-center">
         <Image
           className="mr-[2px]"
