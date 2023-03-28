@@ -46,19 +46,21 @@ const Projects = () => {
           return (
             <div key={idx}>
               <div className="flex flex-col md:flex-row md:space-x-12">
-                <div className="md:w-1/2 bg-[#8a2be2] flex justify-center rounded-xl min-h-[200px] items-end">
-                  <Image
-                    src={project.image}
-                    alt={project.name}
-                    width={200}
-                    height={200}
-                    priority
-                    className="w-auto min-h-[170px]  rounded-tl-xl rounded-tr-xl shadow-xl hover:opacity-70"
-                  />
+                <div className="md:w-1/2 bg-[#8a2be2] flex justify-center rounded-xl min-h-[200px] items-end hover:opacity-70 hover:cursor-pointer">
+                  <a href={project.link} target="_blank">
+                    <Image
+                      src={project.image}
+                      alt={project.name}
+                      width={200}
+                      height={200}
+                      priority
+                      className="w-auto min-h-[170px]  rounded-tl-xl rounded-tr-xl shadow-xl"
+                    />
+                  </a>
                 </div>
-                <div className="mt-9 md:w-1/2 md:mt-0 flex flex-col justify-evenly">
-                  <div>
-                    <h1 className="font-slab font-bold text-3xl mb-2.5">
+                <div className="mt-5 px-2.5 py-2.5 md:w-1/2 md:mt-0 flex flex-col justify-between">
+                  <div className="mb-2.5 md:mb-0">
+                    <h1 className="font-slab font-bold text-2xl mb-2.5">
                       {project.name}
                     </h1>
                     <p className="font-slab font-light text-md mb-2.5">
@@ -69,17 +71,20 @@ const Projects = () => {
                   <div className="flex">
                     <a
                       href={project.github}
-                      className="mr-5 hover:translate-y-[-10px] transition ease-in-out delay-75 duration-200"
+                      className="mr-3 hover:translate-y-[-10px] transition ease-in-out delay-75 duration-200"
                       target="_blank"
                     >
-                      <TfiGithub size={30} />
+                      <TfiGithub className="md:p-[2px]" size={30} />
                     </a>
                     <a
                       href={project.link}
                       className="hover:translate-y-[-10px] transition ease-in-out delay-75 duration-200"
                       target="_blank"
                     >
-                      <HiArrowTopRightOnSquare size={30} />
+                      <HiArrowTopRightOnSquare
+                        className="md:p-[2px]"
+                        size={30}
+                      />
                     </a>
                   </div>
                 </div>
