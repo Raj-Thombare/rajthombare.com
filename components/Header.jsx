@@ -6,9 +6,9 @@ import { DiGithubFull } from "react-icons/di";
 
 const Header = () => {
   return (
-    <div className="w-[100%] min-h-screen md:min-h-full pt-[50px] px-10 text-center md:text-left flex justify-end md:justify-between flex-col-reverse md:flex-row items-center md:items-start">
+    <div className="w-[100%] min-h-screen md:min-h-full  pt-[50px] pb-10 px-10 text-center md:text-left flex justify-end md:justify-between flex-col-reverse md:flex-row items-center md:items-start">
       <div className="md:w-[60%] pt-7">
-        <h1 className="mb-8 text-5xl md:text-6xl  font-bold mt-6 md:mt-0 text-[#2d2e32]">
+        <h1 className="mb-8 text-5xl md:text-[50px] font-bold mt-6 md:mt-0 text-[#2d2e32]">
           Full Stack Software Engineer
         </h1>
         <p className="mb-8 font-slab font-light text-lg text-left break-all pr-0 md:pr-10">
@@ -33,7 +33,7 @@ const Header = () => {
       <Image
         src={MyPicture}
         alt="my picture"
-        className="rounded-full md:w-[35%]"
+        className="rounded-full md:w-[30%]"
         priority
         width={200}
         height={200}

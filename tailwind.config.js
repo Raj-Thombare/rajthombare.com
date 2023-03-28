@@ -16,6 +16,9 @@ module.exports = {
       },
       colors: {
         'white-rgba': 'rgb(255 255 255 / 59%)'
+      },
+      boxShadow: {
+        'nav':  'rgba(0, 0, 0, 0.18) 0px 2px 4px'
       }
     },
   },
