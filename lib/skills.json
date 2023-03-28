@@ -1,0 +1,52 @@
+{
+  "skills": [
+    {
+      "image": "/skills/js.svg",
+      "title": "JavaScript"
+    },
+    {
+      "image": "/skills/react.svg",
+      "title": "Reactjs"
+    },
+    {
+      "image": "/skills/ts.svg",
+      "title": "TypeScript"
+    },
+    {
+      "image": "/skills/next.svg",
+      "title": "Nextjs"
+    },
+    {
+      "image": "/skills/redux.svg",
+      "title": "Redux"
+    },
+    {
+      "image": "/skills/nodejs.svg",
+      "title": "Nodejs"
+    },
+    {
+      "image": "/skills/tailwind.svg",
+      "title": "Tailwind"
+    },
+    {
+      "image": "/skills/chakra.svg",
+      "title": "ChakraUi"
+    },
+    {
+      "image": "/skills/html.svg",
+      "title": "HTML5"
+    },
+    {
+      "image": "/skills/css.svg",
+      "title": "CSS3"
+    },
+    {
+      "image": "/skills/github.svg",
+      "title": "Github"
+    },
+    {
+      "image": "/skills/git.svg",
+      "title": "Git"
+    }
+  ]
+}

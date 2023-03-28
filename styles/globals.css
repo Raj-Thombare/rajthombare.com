@@ -13,7 +13,7 @@
   body {
     background-color: #f9f9f9;
     max-width: 800px;
-      margin: auto;
+    margin: auto;
   }
 
   li {
@@ -23,6 +23,6 @@
   li a {
     font-size: 17px;
     color: #2d2e32;
-    font-weight: 600;
+    font-weight: 500;
   }
 }

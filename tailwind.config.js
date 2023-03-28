@@ -13,6 +13,9 @@ module.exports = {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
         slab: ['Roboto Slab', 'serif'],
+      },
+      colors: {
+        'white-rgba': 'rgb(255 255 255 / 59%)'
       }
     },
   },
