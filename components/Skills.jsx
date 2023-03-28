@@ -12,6 +12,7 @@ const Skills = ({ skills }) => {
               width={40}
               height={40}
               src={skill.image}
+              className="w-[40px] h-auto"
             />
             <p className="text-sm pt-1.5 font-slab">{skill.title}</p>
           </div>
