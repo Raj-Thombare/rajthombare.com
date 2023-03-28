@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Navbar from '@/components/Navbar'
 import Header from '@/components/Header'
+import Projects from '@/components/Projects'
 import Skills from '@/components/Skills'
 
 import { getSkills } from '@/lib/getData'
@@ -18,6 +19,7 @@ export default function Home({ mySkills }) {
         <Navbar />
         <Header />
         <Skills skills={mySkills} />
+        <Projects />
       </main>
     </>
   )
