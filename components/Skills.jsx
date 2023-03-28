@@ -7,7 +7,12 @@ const Skills = ({ skills }) => {
       <div className="grid grid-cols-3 md:grid-cols-6 gap-8 md:justify-items-center items-end overflow-hidden">
         {skills.map((skill) => (
           <div key={skill.title} className="flex flex-col items-center">
-            <Image alt={skill.title} width={40} height={40} src={skill.image} />
+            <Image
+              alt={skill.title}
+              width={40}
+              height={40}
+              src={skill.image}
+            />
             <p className="text-sm pt-1.5 font-slab">{skill.title}</p>
           </div>
         ))}

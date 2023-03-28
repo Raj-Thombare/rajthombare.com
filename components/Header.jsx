@@ -3,6 +3,7 @@ import MyPicture from "../public/picture.jpg";
 import { FaLinkedinIn } from "react-icons/fa";
 import { CgTwitter } from "react-icons/cg";
 import { DiGithubFull } from "react-icons/di";
+import { FcDocument } from "react-icons/fc";
 
 const Header = () => {
   return (
@@ -18,22 +19,42 @@ const Header = () => {
           dynamic, engaging interfaces through writing clean and optimized code
           and utilizing cutting-edge development tools and techniques.
         </p>
-        <div className="w-[40%] flex justify-between">
-          <a href="https://github.com/raj-thombare" target="_blank">
+        <div className="flex">
+          <a
+            className="social-icon"
+            href="https://github.com/raj-thombare"
+            target="_blank"
+          >
             <DiGithubFull size={30} />
           </a>
-          <a href="https://linkedin.com/in/rajthombare" target="_blank">
+          <a
+            className="social-icon"
+            href="https://linkedin.com/in/rajthombare"
+            target="_blank"
+          >
             <FaLinkedinIn size={30} />
           </a>
-          <a href="https://twitter.com/saysrakaa" target="_blank">
+          <a
+            className="social-icon"
+            href="https://twitter.com/saysrakaa"
+            target="_blank"
+          >
             <CgTwitter size={30} />
+          </a>
+          <a
+            className="social-icon"
+            href="https://docs.google.com/document/d/1RaFJPnZPtRmpmoKanLKua4qJLIcXHY6C6GNSHig_h08/edit?usp=sharing"
+            target="_blank"
+            alt="resume"
+          >
+            <FcDocument size={30} />
           </a>
         </div>
       </div>
       <Image
         src={MyPicture}
         alt="my picture"
-        className="rounded-full md:w-[30%]"
+        className="rounded-full md:w-[35%]"
         priority
         width={200}
         height={200}

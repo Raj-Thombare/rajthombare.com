@@ -19,18 +19,18 @@ const Navbar = () => {
       <div className="md:hidden cursor-pointer">
         <GiBackpack size={35} />
       </div>
-      <ul className="hidden md:block md:flex">
+      <ul className="hidden md:flex">
         <li>
-          <a href="">Home</a>
+          <a href="#">Home</a>
         </li>
         <li>
-          <a href="">About</a>
+          <a href="#">About</a>
         </li>
         <li>
-          <a href="">Projects</a>
+          <a href="#">Projects</a>
         </li>
         <li>
-          <a href="">Contact</a>
+          <a href="#">Contact</a>
         </li>
       </ul>
     </nav>

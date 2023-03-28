@@ -26,3 +26,9 @@
     font-weight: 500;
   }
 }
+
+@layer components {
+  .social-icon {
+    @apply mx-2 p-2.5 md:p-2 text-white bg-black rounded-[50%]
+  }
+}
