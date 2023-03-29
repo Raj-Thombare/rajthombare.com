@@ -5,7 +5,7 @@ import { GiBackpack } from "react-icons/gi";
 const Navbar = () => {
   return (
     <nav className="mx-[20px] md:mx-0 py-1 px-6 md:px-10 sticky top-4 border rounded-[50px] flex justify-between items-center bg-white-rgba overflow-y-hidden backdrop-saturate-[180%] backdrop-blur shadow-nav">
-      <div className="flex items-center">
+      <header className="flex items-center">
         <Image
           className="mr-[2px]"
           src={Logo}
@@ -15,7 +15,7 @@ const Navbar = () => {
           priority
         />
         <h3 className="text-[32px] font-bold">AJ</h3>
-      </div>
+      </header>
       <div className="md:hidden cursor-pointer">
         <GiBackpack size={35} />
       </div>
