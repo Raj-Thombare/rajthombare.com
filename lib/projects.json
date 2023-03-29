@@ -1,0 +1,32 @@
+{
+  "projects": [
+    {
+      "name": "Pokedex",
+      "description": "It's a pokedex web app made using typescript and react.js",
+      "image": "/projects/pokedex.jpg",
+      "github": "https://github.com/Raj-Thombare/Pokedex",
+      "link": "https://p0kedexx.vercel.app"
+    },
+    {
+      "name": "Portfolio",
+      "description": "Personal Portfolio made using Nextjs and Tailwind CSS",
+      "image": "/projects/portfolio.jpg",
+      "github": "https://github.com/Raj-Thombare/rajthombare.com",
+      "link": "https://rajthombare.vercel.app"
+    },
+    {
+      "name": "Github Finder",
+      "description": "It's GitHub Finder web app that finds user on github!",
+      "image": "/projects/githubfinder.jpg",
+      "github": "https://github.com/Raj-Thombare/Github-Finder",
+      "link": "https://githubxfinder.vercel.app"
+    },
+    {
+      "name": "QuizIt",
+      "description": "It's a web app that has various quizs on multiple topics.",
+      "image": "/projects/quizit.jpg",
+      "github": "https://github.com/Raj-Thombare/QuizIt",
+      "link": "https://quizzit.vercel.app"
+    }
+  ]
+}

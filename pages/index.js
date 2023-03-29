@@ -5,8 +5,9 @@ import Projects from '@/components/Projects'
 import Skills from '@/components/Skills'
 
 import { getSkills } from '@/lib/getData'
+import { getProjects } from '@/lib/getData'
 
-export default function Home({ mySkills }) {
+export default function Home({ mySkills, myProjects }) {
   return (
     <>
       <Head>
@@ -19,7 +20,7 @@ export default function Home({ mySkills }) {
         <Navbar />
         <Hero />
         <Skills skills={mySkills} />
-        <Projects />
+        <Projects projects={myProjects} />
       </main>
     </>
   )
@@ -27,10 +28,12 @@ export default function Home({ mySkills }) {
 
 export const getStaticProps = async () => {
   const skills = await getSkills();
+  const projects = await getProjects();
 
   return {
     props: {
       mySkills: skills,
+      myProjects: projects,
     }
   };
 };
