@@ -75,7 +75,7 @@ const Projects = () => {
                       className="mr-3 hover:translate-y-[-10px] transition ease-in-out delay-75 duration-200"
                       target="_blank"
                     >
-                      <TfiGithub className="md:p-[2px]" size={30} />
+                      <TfiGithub className="md:p-[3px]" size={30} />
                     </a>
                     <a
                       href={project.link}
@@ -83,7 +83,7 @@ const Projects = () => {
                       target="_blank"
                     >
                       <HiArrowTopRightOnSquare
-                        className="md:p-[2px]"
+                        className="md:p-[3px]"
                         size={30}
                       />
                     </a>
