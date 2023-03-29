@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Logo from "../public/logo.jpg";
 import { GiBackpack } from "react-icons/gi";
 
@@ -21,16 +22,16 @@ const Navbar = () => {
       </div>
       <ul className="hidden md:flex">
         <li>
-          <a href="#home">Home</a>
+          <Link href="/">Home</Link>
         </li>
         <li>
-          <a href="#">About</a>
+          <Link href="#about">About</Link>
         </li>
         <li>
-          <a href="#projects">Projects</a>
+          <Link href="#projects">Projects</Link>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <Link href="#contact">Contact</Link>
         </li>
       </ul>
     </nav>

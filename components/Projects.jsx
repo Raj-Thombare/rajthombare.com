@@ -3,41 +3,9 @@ import Link from "next/link";
 import { TfiGithub } from "react-icons/tfi";
 import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 
-// const projects = [
-//   {
-//     name: "Pokedex",
-//     description:
-//       "It's a pokedex web app made using typescript and react.js It's a pokedex web app made using typescript and react.jsIt's a pokedex web app made using typescript and react.js It's a pokedex web app made using typescript and react.jsIt's a pokedex web app made using typescript and react.js It's a pokedex web app made using typescript and react.js",
-//     image: "/projects/pokedex.jpg",
-//     github: "https://github.com/Raj-Thombare/Pokedex",
-//     link: "https://p0kedexx.vercel.app",
-//   },
-//   {
-//     name: "Portfolio",
-//     description: "Personal Portfolio made using Nextjs and Tailwind CSS",
-//     image: "/projects/portfolio.jpg",
-//     github: "https://github.com/Raj-Thombare/rajthombare.com",
-//     link: "https://rajthombare.vercel.app",
-//   },
-//   {
-//     name: "Github Finder",
-//     description: "It's GitHub Finder web app that finds user on github!",
-//     image: "/projects/githubfinder.jpg",
-//     github: "https://github.com/Raj-Thombare/Github-Finder",
-//     link: "https://githubxfinder.vercel.app",
-//   },
-//   {
-//     name: "QuizIt",
-//     description: "It's a web app that has various quizs on multiple topics.",
-//     image: "/projects/quizit.jpg",
-//     github: "https://github.com/Raj-Thombare/QuizIt",
-//     link: "https://quizzit.vercel.app",
-//   },
-// ];
-
 const Projects = ({ projects }) => {
   return (
-    <section id="projects" className="px-10 my-10 lg:my-20">
+    <section id="projects" className="px-10 my-10 lg:my-20 h-screen">
       <h3 className="mb-[40px] text-[#2d2e32] font-bold text-[32px]">
         Projects
       </h3>
@@ -60,7 +28,7 @@ const Projects = ({ projects }) => {
                     className="w-auto min-h-[170px]  rounded-tl-xl rounded-tr-xl shadow-xl"
                   />
                 </Link>
-                <div className="mt-5 px-2.5 py-2.5 min-h-[200px] md:w-1/2 md:mt-0 flex flex-col justify-between">
+                <div className="mt-5 px-2.5 py-2.5 h-auto md:min-h-[200px] md:w-1/2 md:mt-0 flex flex-col md:justify-between">
                   <div className="mb-2.5 md:mb-0">
                     <h1 className="font-bold text-2xl mb-2.5">
                       {project.name}
