@@ -1,0 +1,16 @@
+{
+  "education": [
+    {
+      "name": "Chhatrapati Shivaji Maharaj University",
+      "image": "/csmu.jpg",
+      "course": "Bachelors in Computer Science",
+      "year": "2019 - 2022"
+    },
+    {
+      "name": "Reliance Foundation School & Jr. College",
+      "image": "/rfsc.png",
+      "course": "SSC and HSC",
+      "year": "2017 - 2019"
+    }
+  ]
+}

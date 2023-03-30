@@ -46,7 +46,7 @@ const Hero = () => {
           </a>
           <a
             className="social-icon"
-            href="https://docs.google.com/document/d/1RaFJPnZPtRmpmoKanLKua4qJLIcXHY6C6GNSHig_h08/edit?usp=sharing"
+            href=""
             target="_blank"
             alt="resume"
           >

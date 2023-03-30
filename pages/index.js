@@ -4,10 +4,9 @@ import Hero from '@/components/Hero'
 import Projects from '@/components/Projects'
 import About from '@/components/About'
 
-import { getSkills } from '@/lib/getData'
-import { getProjects } from '@/lib/getData'
+import { getSkills, getProjects, getEducation } from '@/lib/getData'
 
-export default function Home({ mySkills, myProjects }) {
+export default function Home({ mySkills, myProjects, myEducation }) {
   return (
     <>
       <Head>
@@ -19,7 +18,7 @@ export default function Home({ mySkills, myProjects }) {
       <main>
         <Navbar />
         <Hero />
-        <About skills={mySkills} />
+        <About skills={mySkills} education={myEducation} />
         <Projects projects={myProjects} />
       </main>
     </>
@@ -29,11 +28,13 @@ export default function Home({ mySkills, myProjects }) {
 export const getStaticProps = async () => {
   const skills = await getSkills();
   const projects = await getProjects();
+  const education = await getEducation();
 
   return {
     props: {
       mySkills: skills,
       myProjects: projects,
+      myEducation:education
     }
   };
 };
