@@ -34,7 +34,7 @@ export const getStaticProps = async () => {
     props: {
       mySkills: skills,
       myProjects: projects,
-      myEducation:education
+      myEducation: education,
     }
   };
 };

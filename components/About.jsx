@@ -1,11 +1,11 @@
 import Skills from "./Skills";
 import Education from "./Education";
 
-const About = ({skills}) => {
+const About = ({skills, education}) => {
   return (
    <div id="about" className="h-screen">
     <Skills skills={skills} />
-    <Education />
+    <Education education={education} />
    </div>
   );
 };

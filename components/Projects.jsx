@@ -5,7 +5,7 @@ import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 
 const Projects = ({ projects }) => {
   return (
-    <section id="projects" className="px-10 my-10 lg:my-20 h-screen">
+    <section id="projects" className="px-10 my-10 lg:my-20">
       <h3 className="mb-[40px] text-[#2d2e32] font-bold text-[32px]">
         Projects
       </h3>
