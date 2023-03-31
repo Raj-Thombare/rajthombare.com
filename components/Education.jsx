@@ -9,7 +9,7 @@ const Education = ({education}) => {
       {education.map((item, idx)=>{
         return (
           <div className="flex flex-col w-[100%] " key={idx}>
-            <div className="flex flex-col justify-evenly md:flex-row items-center mb-8 md:mb-12 min-h-[140px] p-[18px] border-[1px] border-black rounded-xl">
+            <div className="flex flex-col justify-evenly md:flex-row items-center mb-8 md:mb-12 min-h-[140px] p-[18px] bg-white border-[1px] border-black rounded-xl">
               <Image
                 src={item.image}
                 alt={item.name}
@@ -19,7 +19,7 @@ const Education = ({education}) => {
                 priority
               />
               <div>
-                  <h4 className="font-bold text-xl">{item.name}</h4>
+                  <h4 className="font-semibold text-xl text-center mb-2 md:text-left md:mb-0">{item.name}</h4>
                   <li className="text-md font-slab p-0 list-square">
                     {item.course}
                   </li>

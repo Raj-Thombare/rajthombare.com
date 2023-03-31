@@ -17,7 +17,7 @@ const Projects = ({ projects }) => {
                 <Link
                   href={project.link}
                   target="_blank"
-                  className="md:w-1/2 bg-[#8a2be2] flex justify-center rounded-xl min-h-[200px] items-end hover:opacity-70 hover:cursor-pointer transition-all ease-in-out delay-75 duration-200"
+                  className="md:w-1/2 bg-[#8a2be2] flex justify-center items-end flex-wrap rounded-xl hover:opacity-70 hover:cursor-pointer transition-all ease-in-out delay-75 duration-200"
                 >
                   <Image
                     src={project.image}
@@ -25,7 +25,7 @@ const Projects = ({ projects }) => {
                     width={200}
                     height={200}
                     priority
-                    className="w-auto min-h-[170px]  rounded-tl-xl rounded-tr-xl shadow-xl"
+                    className="w-[85%] h-[70%] mt-[20px] rounded-tl-xl rounded-tr-xl shadow-xl"
                   />
                 </Link>
                 <div className="mt-5 px-2.5 py-2.5 h-auto md:min-h-[200px] md:w-1/2 md:mt-0 flex flex-col md:justify-between">

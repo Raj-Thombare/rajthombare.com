@@ -21,16 +21,16 @@ const Navbar = () => {
       </div>
       <ul className="hidden md:flex">
         <li>
-          <Link href="/">Home</Link>
+          <Link href="/" className="hover:opacity-75">Home</Link>
         </li>
         <li>
-          <Link href="#about">About</Link>
+          <Link href="#about" className="hover:opacity-75">About</Link>
         </li>
         <li>
-          <Link href="#projects">Projects</Link>
+          <Link href="#projects" className="hover:opacity-75">Projects</Link>
         </li>
         <li>
-          <Link href="#contact">Contact</Link>
+          <Link href="#contact" className="hover:opacity-75">Contact</Link>
         </li>
       </ul>
     </nav>
