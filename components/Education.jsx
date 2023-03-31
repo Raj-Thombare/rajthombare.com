@@ -8,17 +8,17 @@ const Education = ({education}) => {
       </h3>
       {education.map((item, idx)=>{
         return (
-          <div className="flex flex-col" key={idx}>
-            <div className="flex flex-col md:flex-row items-center mb-8 md:mb-12">
+          <div className="flex flex-col w-[100%] md:w-[83%]" key={idx}>
+            <div className="flex flex-col justify-evenly md:flex-row items-center mb-8 md:mb-12">
               <Image
                 src={item.image}
-                alt="university logo"
-                width={150}
-                height={150}
-                className="w-[150px] min-h-[50px] mr-0 mb-7 md:mb-0 md:mr-12"
+                alt={item.name}
+                width={110}
+                height={110}
+                className="w-[135px] md:w-[110px] h-auto mb-7 md:mb-0"
                 priority
               />
-              <div className="pl-5 md:pl-0">
+              <div className="">
                 <h4 className="font-bold text-xl">{item.name}</h4>
                 <p className="text-md font-slab">{item.course}</p>
                 <p className="text-md font-slab">{item.year}</p>
