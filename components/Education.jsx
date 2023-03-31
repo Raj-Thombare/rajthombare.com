@@ -3,13 +3,13 @@ import Image from "next/image";
 const Education = ({education}) => {
   return (
     <section className="px-10">
-      <h3 className="mb-[40px] text-[#2d2e32] font-bold text-[32px]">
+      <h3 className="mb-[40px] text-[#2d2e32] font-bold text-[32px] border-b-2 pb-[2px]">
         Education
       </h3>
       {education.map((item, idx)=>{
         return (
           <div className="flex flex-col" key={idx}>
-            <div className="flex flex-col md:flex-row items-center md:items-start mb-20 md:mb-12">
+            <div className="flex flex-col md:flex-row items-center md:items-start mb-8 md:mb-12">
               <Image
                 src={item.image}
                 alt="university logo"
