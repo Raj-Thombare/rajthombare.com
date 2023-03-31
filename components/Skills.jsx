@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Skills = ({ skills }) => {
   return (
-    <section className="px-10 pb-10 md:pb-0 my-6 md:my-10 lg:my-20">
+    <section className="mb-20 px-10 pb-10 md:pb-0">
       <h3 className="mb-[40px] text-[#2d2e32] font-bold text-[32px]">Skills</h3>
       <div className="grid grid-cols-3 md:grid-cols-6 gap-8 md:justify-items-center items-end overflow-hidden">
         {skills.map((skill, idx) => (

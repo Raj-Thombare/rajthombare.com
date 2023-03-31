@@ -3,7 +3,7 @@ import Education from "./Education";
 
 const About = ({skills, education}) => {
   return (
-   <div id="about" className="h-screen">
+   <div id="about" className="my-10">
     <Skills skills={skills} />
     <Education education={education} />
    </div>
