@@ -14,7 +14,7 @@ const Skills = ({ skills }) => {
               src={skill.image}
               className="w-[40px] h-[40px]"
             />
-            <p className="text-sm pt-1.5 font-slab">{skill.title}</p>
+            <p className="text-sm mt-2.5 pt-1.5 font-slab">{skill.title}</p>
           </div>
         ))}
       </div>
