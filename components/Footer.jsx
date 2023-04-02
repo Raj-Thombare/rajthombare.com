@@ -101,17 +101,19 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <p className="text-center md:text-left">
-        Copyright © 2023
-        <a
-          className="mx-1 hover:opacity-50"
-          href="https://rajthombare.vercel.app"
-          target="_blank"
-        >
-          Raj Thombare
-        </a>
-        | All Rights Reserved
-      </p>
+      <div className="flex flex-col md:flex-row justify-between  text-center md:text-left">
+        <p>
+          Copyright © 2023
+          <a
+            className="mx-2 text-[#8a2be2] hover:opacity-75"
+            href="https://rajthombare.vercel.app"
+            target="_blank"
+          >
+            Raj Thombare
+          </a>
+        </p>
+        <p>| All Rights Reserved</p>
+      </div>
     </section>
   );
 };
