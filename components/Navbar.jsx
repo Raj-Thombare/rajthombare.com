@@ -11,13 +11,14 @@ const Navbar = () => {
   const [nav, setNav] = useState(false)
 
   const bodyRef = useRef();
+
   const navHandler = () => {
     setNav((prev) => !prev)
   }
 
   return (
-    <div className="mx-[20px] sticky top-4 transition-all ease-in-out delay-75 duration-200">
-      <nav className="w-full md:mx-0 py-2 md:py-[6px] px-6 border rounded-[50px] flex justify-between items-center bg-white-rgba overflow-y-hidden backdrop-saturate-[180%] backdrop-blur shadow-nav z-50">
+    <div className="mx-[20px] sticky top-4 z-50">
+      <nav className="w-full md:mx-0 py-1 md:py-[6px] px-6 border rounded-[50px] flex justify-between items-center bg-white-rgba overflow-y-hidden backdrop-saturate-[180%] backdrop-blur shadow-nav z-50">
         <header className="flex items-center">
           <Image
             className="mr-[2px]"
@@ -50,42 +51,59 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        {/* mobile menu */}
 
         <div className="md:hidden cursor-pointer">
           <BiMenuAltRight size={45} onClick={navHandler} />
         </div>
       </nav>
 
-      {nav && (
-        <div className="sm:hidden fixed top-0 left-0 right-0 bottom-0 p-0 m-0 flex justify-center items-center w-full h-screen z-50 bg-white-rgba backdrop-saturate-[180%] backdrop-blur text-center ease-in duration-300">
-          <div className="fixed top-[25px] right-[35px]">
-            <IoMdClose size={45} onClick={navHandler} />
-          </div>
-          <ul className="w-full h-full flex flex-col justify-center items-center">
-            <li className="m-3">
-              <Link href="/" className="text-4xl hover:opacity-75">
-                Home
-              </Link>
-            </li>
-            <li className="m-3">
-              <Link href="#about" className="text-4xl hover:opacity-75">
-                About
-              </Link>
-            </li>
-            <li className="m-3">
-              <Link href="#projects" className="text-4xl hover:opacity-75">
-                Projects
-              </Link>
-            </li>
-            <li className="m-3">
-              <Link href="#contact" className="text-4xl hover:opacity-75">
-                Contact
-              </Link>
-            </li>
-          </ul>
+      <div
+        className={`sm:hidden w-[100%] fixed top-0 right-0 bottom-0 p-0 m-0 flex justify-center items-center h-screen z-50 bg-white-rgba backdrop-saturate-[180%] backdrop-blur text-center ${
+          nav ? "translate-x-0" : "translate-x-full"
+        } ease-in-out duration-300`}
+      >
+        <div className="fixed top-[25px] right-[35px]">
+          <IoMdClose size={45} onClick={navHandler} />
         </div>
-      )}
+        <ul className="w-full h-full flex flex-col justify-center items-center">
+          <li className="m-3">
+            <Link
+              href="/"
+              className="text-4xl hover:opacity-75"
+              onClick={navHandler}
+            >
+              Home
+            </Link>
+          </li>
+          <li className="m-3">
+            <Link
+              href="#about"
+              className="text-4xl hover:opacity-75"
+              onClick={navHandler}
+            >
+              About
+            </Link>
+          </li>
+          <li className="m-3">
+            <Link
+              href="#projects"
+              className="text-4xl hover:opacity-75"
+              onClick={navHandler}
+            >
+              Projects
+            </Link>
+          </li>
+          <li className="m-3">
+            <Link
+              href="#contact"
+              className="text-4xl hover:opacity-75"
+              onClick={navHandler}
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };

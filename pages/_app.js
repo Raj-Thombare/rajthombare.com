@@ -3,7 +3,8 @@ import { Poppins, Roboto_Slab } from '@next/font/google'
 
 const poppins = Poppins({
   subsets:['latin'],
-  weight:['500','600','700'],
+  weight:['400','500','600','700'],
+  variable:'--font-poppins'
 })
 
 const roboto_slab = Roboto_Slab({
@@ -14,7 +15,7 @@ const roboto_slab = Roboto_Slab({
 
 export default function App({ Component, pageProps }) {
   return (
-    <main className={`${poppins.className} ${roboto_slab.variable}`}>
+    <main className={`${poppins.className} ${poppins.variable} ${roboto_slab.variable}`}>
     <Component {...pageProps} />
   </main>
   )

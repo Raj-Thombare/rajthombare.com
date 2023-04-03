@@ -1,4 +1,4 @@
-const {fontFamily} = require("tailwindcss/defaultTheme")
+const { fontFamily } = require("tailwindcss/defaultTheme")
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -17,6 +17,7 @@ module.exports = {
       },
       fontFamily: {
         slab: ['var(--font-roboto-slab)'],
+        poppins: ['var(--font-poppins)'],
       },
       colors: {
         'white-rgba': 'rgb(255 255 255 / 59%)'

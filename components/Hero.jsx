@@ -16,13 +16,16 @@ const Hero = () => {
           Full Stack Software Engineer
         </h1>
         <p
-          className={"mb-8 font-slab font-light text-lg text-left break-all pr-0 md:pr-10"}
+          className={
+            "mb-8 font-slab font-light text-lg text-left break-all pr-0 md:pr-10"
+          }
         >
-          Hello, I am Raj Thombare. A Full Stack Developer based in Navi Mumbai,
-          Maharashtra.I excel in designing and maintaining responsive websites
-          that offer a smooth user experience. My expertise lies in crafting
-          dynamic, engaging interfaces through writing clean and optimized code
-          and utilizing cutting-edge development tools and techniques.
+          Hello, I am <span className="text-3xl font-bold font-poppins mx-[5px] text-[#2d2e32]">Raj Thombare.</span> A Full Stack Developer based in
+          Navi Mumbai, Maharashtra.I excel in designing and maintaining
+          responsive websites that offer a smooth user experience. My expertise
+          lies in crafting dynamic, engaging interfaces through writing clean
+          and optimized code and utilizing cutting-edge development tools and
+          techniques.
         </p>
         <div className="flex">
           <a
