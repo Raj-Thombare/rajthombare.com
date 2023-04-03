@@ -1,5 +1,21 @@
 import '@/styles/globals.css'
+import { Poppins, Roboto_Slab } from '@next/font/google'
+
+const poppins = Poppins({
+  subsets:['latin'],
+  weight:['500','600','700'],
+})
+
+const roboto_slab = Roboto_Slab({
+  weight:['300','400'],
+  subsets:['latin'],
+  variable:'--font-roboto-slab'
+})
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <main className={`${poppins.className} ${roboto_slab.variable}`}>
+    <Component {...pageProps} />
+  </main>
+  )
 }

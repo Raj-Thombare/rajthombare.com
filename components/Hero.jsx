@@ -15,7 +15,9 @@ const Hero = () => {
         <h1 className="mb-8 text-5xl md:text-[50px] font-bold mt-6 md:mt-0 text-[#2d2e32]">
           Full Stack Software Engineer
         </h1>
-        <p className="mb-8 font-slab font-light text-lg text-left break-all pr-0 md:pr-10">
+        <p
+          className={"mb-8 font-slab font-light text-lg text-left break-all pr-0 md:pr-10"}
+        >
           Hello, I am Raj Thombare. A Full Stack Developer based in Navi Mumbai,
           Maharashtra.I excel in designing and maintaining responsive websites
           that offer a smooth user experience. My expertise lies in crafting
@@ -44,12 +46,7 @@ const Hero = () => {
           >
             <CgTwitter size={30} />
           </a>
-          <a
-            className="social-icon"
-            href=""
-            target="_blank"
-            alt="resume"
-          >
+          <a className="social-icon" href="" target="_blank" alt="resume">
             <FcDocument size={30} />
           </a>
         </div>

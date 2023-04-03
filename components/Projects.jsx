@@ -33,7 +33,9 @@ const Projects = ({ projects }) => {
                     <h1 className="font-bold text-2xl mb-1.5">
                       {project.name}
                     </h1>
-                    <p className="font-slab font-light text-md mb-2.5">
+                    <p
+                      className={"font-slab font-light text-md mb-2.5"}
+                    >
                       {project.description}
                     </p>
                   </div>
