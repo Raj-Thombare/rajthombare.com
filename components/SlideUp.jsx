@@ -2,7 +2,6 @@
 
 import React, { useEffect, useRef } from "react"
 
-
 export default function SlideUp({ children, offset = "0px" }) {
   const ref = useRef(null)
 

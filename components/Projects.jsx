@@ -5,6 +5,16 @@ import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 import SlideUp from "./SlideUp";
 
 const Projects = ({ projects }) => {
+
+  const icons = [
+    {
+      icon: <TfiGithub className="p-[3px]" size={30} />,
+    },
+    {
+      icon: <HiArrowTopRightOnSquare className="p-[3px]" size={30} />,
+    },
+  ];
+  
   return (
     <section id="projects" className="px-10 mb-10 lg:mt-0 lg:mb-10">
       <h3 className="mb-[40px] text-[#2d2e32] font-bold text-[32px] border-b-2 pb-1 md:pb-[2px]">
@@ -41,23 +51,18 @@ const Projects = ({ projects }) => {
                     </div>
 
                     <div className="flex">
-                      <a
-                        href={project.github}
-                        className="mr-3 hover:translate-y-[-10px] transition ease-in-out delay-75 duration-200"
-                        target="_blank"
-                      >
-                        <TfiGithub className="p-[3px]" size={30} />
-                      </a>
-                      <a
-                        href={project.link}
-                        className="hover:translate-y-[-10px] transition ease-in-out delay-75 duration-200"
-                        target="_blank"
-                      >
-                        <HiArrowTopRightOnSquare
-                          className="p-[3px]"
-                          size={30}
-                        />
-                      </a>
+                      {icons.map((item, idx)=>{
+                        return (
+                          <a
+                          key={idx}
+                            href={project.github}
+                            className="mr-3 hover:translate-y-[-10px] transition ease-in-out delay-75 duration-200"
+                            target="_blank"
+                          >
+                            {item.icon}
+                          </a>
+                        );
+                      })}
                     </div>
                   </div>
                 </div>

@@ -51,7 +51,7 @@ const Navbar = () => {
             return (
               <li key={nav.title}>
                 <Link href={nav.link} className={` ${
-                  router.pathname === nav.link ? 'text-black' : 'opacity-75'
+                  router.pathname === nav.link ? 'text-black font-semibold' : 'opacity-75'
                 } hover:text-black hover:opacity-100`}>
                   {nav.title}
                 </Link>
@@ -78,7 +78,7 @@ const Navbar = () => {
             return (
               <li key={nav.title} className="m-3">
                 <Link href={nav.link} className={` ${
-                  router.pathname === nav.link ? 'text-black' : 'opacity-75'
+                  router.pathname === nav.link ? 'text-black font-semibold' : 'opacity-75'
                 } text-4xl text-white md:text-black hover:opacity-75`}
                 onClick={navHandler}>
                   {nav.title}
