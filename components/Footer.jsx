@@ -92,7 +92,7 @@ const Footer = () => {
         <p>
           Copyright © 2023
           <a
-            className="mx-2 text-[#8a2be2] hover:opacity-75"
+            className="mx-2 text-[#8a2be2] font-medium hover:opacity-75"
             href="https://rajthombare.vercel.app"
             target="_blank"
           >
