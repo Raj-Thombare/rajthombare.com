@@ -19,7 +19,7 @@ const Projects = ({ projects }) => {
                   <Link
                     href={project.link}
                     target="_blank"
-                    className="md:min-w-[40%] bg-[#8a2be2] flex justify-center items-end flex-wrap rounded-xl hover:opacity-70 hover:cursor-pointer transition-all ease-in-out delay-75 duration-200 shadow-xl z-[-1]"
+                    className="md:min-w-[40%] bg-[#8a2be2] flex justify-center items-end flex-wrap rounded-xl transition-all ease-in-out delay-75 duration-200 shadow-xl z-[-1] hover:opacity-70 hover:cursor-pointer"
                   >
                     <Image
                       src={project.image}
@@ -65,6 +65,14 @@ const Projects = ({ projects }) => {
             </div>
           );
         })}
+      </div>
+      <div className="w-full">
+        <button
+          href="/projects"
+          className="px-1 py-2.5 block m-auto mt-14 text-white bg-black w-[120px] rounded-lg hover:translate-y-[-10px] transition ease-in-out delay-75 duration-200"
+        >
+          See More
+        </button>
       </div>
     </section>
   );

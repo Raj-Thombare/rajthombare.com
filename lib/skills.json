@@ -25,6 +25,18 @@
       "title": "Nodejs"
     },
     {
+      "image": "/skills/express.svg",
+      "title": "Express"
+    },
+    {
+      "image": "/skills/mongodb.svg",
+      "title": "MongoDB"
+    },
+    {
+      "image": "/skills/firebase.svg",
+      "title": "Firebase"
+    },
+    {
       "image": "/skills/tailwind.svg",
       "title": "Tailwind"
     },
@@ -33,11 +45,15 @@
       "title": "ChakraUI"
     },
     {
+      "image": "/skills/material-ui.svg",
+      "title": "MaterialUI"
+    },
+    {
       "image": "/skills/html.svg",
       "title": "HTML5"
     },
     {
-      "image": "/skills/css.svg",
+      "image": "/skills/css3.svg",
       "title": "CSS3"
     },
     {
@@ -47,6 +63,14 @@
     {
       "image": "/skills/git.svg",
       "title": "Git"
+    },
+    {
+      "image": "/skills/yarn.svg",
+      "title": "Yarn"
+    },
+    {
+      "image": "/skills/npm.svg",
+      "title": "NPM"
     }
   ]
 }

@@ -1,5 +1,5 @@
 import '@/styles/globals.css'
-import { Poppins, Roboto_Slab } from '@next/font/google'
+import { Poppins, Roboto_Slab } from 'next/font/google'
 
 const poppins = Poppins({
   subsets:['latin'],
