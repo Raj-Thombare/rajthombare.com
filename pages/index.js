@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Layout from '@/components/Layout'
 import Hero from '@/components/Hero'
-import Projects from '@/components/Projects'
+import FeaturedProjects from '@/components/FeaturedProjects'
 import About from '@/components/About'
 
 import { getSkills, getProjects, getEducation } from '@/lib/getData'
@@ -19,7 +19,7 @@ export default function HomePage({ mySkills, myProjects, myEducation }) {
         <Layout>
           <Hero />
           <About skills={mySkills} education={myEducation} />
-          <Projects projects={myProjects} />
+          <FeaturedProjects projects={myProjects} />
         </Layout>
       </main>
     </>
