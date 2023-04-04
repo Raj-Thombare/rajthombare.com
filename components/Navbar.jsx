@@ -36,18 +36,18 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="#about" className="hover:opacity-75">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link href="#projects" className="hover:opacity-75">
+            <Link href="/projects" className="hover:opacity-75">
               Projects
             </Link>
           </li>
           <li>
+            <Link href="/blogs" className="hover:opacity-75">
+              Posts
+            </Link>
+          </li>
+          <li>
             <Link href="#contact" className="hover:opacity-75">
-              Contact
+              Connect
             </Link>
           </li>
         </ul>
@@ -62,14 +62,14 @@ const Navbar = () => {
           nav ? "translate-x-0" : "translate-x-full"
         } ease-in-out duration-300`}
       >
-        <div className="fixed top-[25px] right-[35px]">
+        <div className="fixed top-[25px] right-[35px] text-white md:text-black">
           <IoMdClose size={45} onClick={navHandler} />
         </div>
-        <ul className="w-full h-full flex flex-col justify-center items-center">
+        <ul className="w-full h-full flex flex-col justify-center items-center bg-[#2d2e32] md:bg-transparent">
           <li className="m-3">
             <Link
               href="/"
-              className="text-4xl hover:opacity-75"
+              className="text-4xl text-white md:text-black hover:opacity-75"
               onClick={navHandler}
             >
               Home
@@ -77,17 +77,8 @@ const Navbar = () => {
           </li>
           <li className="m-3">
             <Link
-              href="#about"
-              className="text-4xl hover:opacity-75"
-              onClick={navHandler}
-            >
-              About
-            </Link>
-          </li>
-          <li className="m-3">
-            <Link
-              href="#projects"
-              className="text-4xl hover:opacity-75"
+              href="/projects"
+              className="text-4xl text-white md:text-black hover:opacity-75"
               onClick={navHandler}
             >
               Projects
@@ -95,11 +86,20 @@ const Navbar = () => {
           </li>
           <li className="m-3">
             <Link
-              href="#contact"
-              className="text-4xl hover:opacity-75"
+              href="/blogs"
+              className="text-4xl text-white md:text-black hover:opacity-75"
               onClick={navHandler}
             >
-              Contact
+              Posts
+            </Link>
+          </li>
+          <li className="m-3">
+            <Link
+              href="#contact"
+              className="text-4xl text-white md:text-black hover:opacity-75"
+              onClick={navHandler}
+            >
+              Connect
             </Link>
           </li>
         </ul>

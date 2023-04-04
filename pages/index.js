@@ -6,7 +6,7 @@ import About from '@/components/About'
 
 import { getSkills, getProjects, getEducation } from '@/lib/getData'
 
-export default function Home({ mySkills, myProjects, myEducation }) {
+export default function HomePage({ mySkills, myProjects, myEducation }) {
   return (
     <>
       <Head>

@@ -17,7 +17,7 @@ const Footer = () => {
             </li>
             <li className="p-0 py-1">
               <Link
-                href="#projects"
+                href="/projects"
                 className="font-normal text-black text-[16px]"
               >
                 Projects
@@ -25,7 +25,7 @@ const Footer = () => {
             </li>
             <li className="p-0 py-1">
               <Link
-                href="#blogs"
+                href="/blogs"
                 className="font-normal text-black text-[16px]"
               >
                 Blogs

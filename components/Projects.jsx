@@ -67,11 +67,8 @@ const Projects = ({ projects }) => {
         })}
       </div>
       <div className="w-full">
-        <button
-          href="/projects"
-          className="px-1 py-2.5 block m-auto mt-14 text-white bg-black w-[120px] rounded-lg hover:translate-y-[-10px] transition ease-in-out delay-75 duration-200"
-        >
-          See More
+        <button className="px-1 py-2.5 block m-auto mt-14 text-white bg-black w-[120px] rounded-lg hover:translate-y-[-10px] transition ease-in-out delay-75 duration-200">
+          <Link href="/projects"> See More</Link>
         </button>
       </div>
     </section>
