@@ -1,9 +1,8 @@
 import Head from 'next/head'
-import Navbar from '@/components/Navbar'
+import Layout from '@/components/Layout'
 import Hero from '@/components/Hero'
 import Projects from '@/components/Projects'
 import About from '@/components/About'
-import Footer from '@/components/Footer'
 
 import { getSkills, getProjects, getEducation } from '@/lib/getData'
 
@@ -17,11 +16,11 @@ export default function Home({ mySkills, myProjects, myEducation }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Navbar />
-        <Hero />
-        <About skills={mySkills} education={myEducation} />
-        <Projects projects={myProjects} />
-        <Footer />
+        <Layout>
+          <Hero />
+          <About skills={mySkills} education={myEducation} />
+          <Projects projects={myProjects} />
+        </Layout>
       </main>
     </>
   )
