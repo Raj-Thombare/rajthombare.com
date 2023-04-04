@@ -1,25 +1,42 @@
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router"
 import Logo from "../public/logo.png";
 import { BiMenuAltRight } from "react-icons/bi";
 import { IoMdClose } from "react-icons/io";
 
-import { useState, useRef } from "react";
-
 const Navbar = () => {
-
-  const [nav, setNav] = useState(false)
-
-  const bodyRef = useRef();
+  const [nav, setNav] = useState(false);
+  const router = useRouter();
 
   const navHandler = () => {
-    setNav((prev) => !prev)
-  }
+    setNav((prev) => !prev);
+  };
+
+  const navLinks = [
+    {
+      title: "Home",
+      link: "/",
+    },
+    {
+      title: "Projects",
+      link: "/projects",
+    },
+    {
+      title: "Posts",
+      link: "/blogs",
+    },
+    {
+      title: "Connect",
+      link: "#contact",
+    }
+  ];
 
   return (
     <div className="mx-[20px] sticky top-4 z-50">
       <nav className="w-full md:mx-0 py-1 md:py-[6px] px-6 border rounded-[50px] flex justify-between items-center bg-white-rgba overflow-y-hidden backdrop-saturate-[180%] backdrop-blur shadow-nav z-50">
-        <header className="flex items-center">
+        <Link href="/" className="flex items-center">
           <Image
             className="mr-[2px]"
             src={Logo}
@@ -28,30 +45,21 @@ const Navbar = () => {
             alt="logo"
             priority
           />
-        </header>
+        </Link>
         <ul className="hidden md:flex">
-          <li>
-            <Link href="/" className="hover:opacity-75">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link href="/projects" className="hover:opacity-75">
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link href="/blogs" className="hover:opacity-75">
-              Posts
-            </Link>
-          </li>
-          <li>
-            <Link href="#contact" className="hover:opacity-75">
-              Connect
-            </Link>
-          </li>
+          {navLinks.map((nav)=>{
+            return (
+              <li key={nav.title}>
+                <Link href={nav.link} className={` ${
+                  router.pathname === nav.link ? 'text-black' : 'opacity-75'
+                } hover:text-black hover:opacity-100`}>
+                  {nav.title}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
-
+          
         <div className="md:hidden cursor-pointer">
           <BiMenuAltRight size={45} onClick={navHandler} />
         </div>
@@ -66,42 +74,18 @@ const Navbar = () => {
           <IoMdClose size={45} onClick={navHandler} />
         </div>
         <ul className="w-full h-full flex flex-col justify-center items-center bg-[#2d2e32] md:bg-transparent">
-          <li className="m-3">
-            <Link
-              href="/"
-              className="text-4xl text-white md:text-black hover:opacity-75"
-              onClick={navHandler}
-            >
-              Home
-            </Link>
-          </li>
-          <li className="m-3">
-            <Link
-              href="/projects"
-              className="text-4xl text-white md:text-black hover:opacity-75"
-              onClick={navHandler}
-            >
-              Projects
-            </Link>
-          </li>
-          <li className="m-3">
-            <Link
-              href="/blogs"
-              className="text-4xl text-white md:text-black hover:opacity-75"
-              onClick={navHandler}
-            >
-              Posts
-            </Link>
-          </li>
-          <li className="m-3">
-            <Link
-              href="#contact"
-              className="text-4xl text-white md:text-black hover:opacity-75"
-              onClick={navHandler}
-            >
-              Connect
-            </Link>
-          </li>
+          {navLinks.map((nav)=>{
+            return (
+              <li key={nav.title} className="m-3">
+                <Link href={nav.link} className={` ${
+                  router.pathname === nav.link ? 'text-black' : 'opacity-75'
+                } text-4xl text-white md:text-black hover:opacity-75`}
+                onClick={navHandler}>
+                  {nav.title}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </div>
