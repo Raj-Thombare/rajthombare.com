@@ -24,12 +24,12 @@ const Navbar = () => {
       link: "/projects",
     },
     {
-      title: "Posts",
+      title: "Blogs",
       link: "/blogs",
     },
     {
-      title: "Connect",
-      link: "#contact",
+      title: "Contact",
+      link: "/#contact",
     }
   ];
 

@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Layout from "@/components/Layout"
 import { Fragment } from "react"
-import Projects from "@/components/Projects"
+import ProjectCard from "@/components/ProjectCard"
 
 import { getProjects } from '@/lib/getData'
 
@@ -20,7 +20,7 @@ export default function ProjectsPage({ myProjects }) {
             {myProjects.map((project, idx) => {
               return (
                 <Fragment key={idx}>
-                  <Projects project={project} />
+                  <ProjectCard project={project} />
                 </Fragment>
               );
             })}

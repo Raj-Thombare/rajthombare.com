@@ -8,7 +8,7 @@ export default function NotFoundPage() {
             <Head>
                 <title>Page Not Found</title>
             </Head>
-            <Layout className="mt-12 h-[60vh] flex flex-col justify-center">
+            <Layout className="mt-12 h-[90vh] flex flex-col justify-center">
                 <div className="text-center mt-8">
                     <h2 className="text-2xl font-light">
                         <span className="font-medium py-2 pr-4 border-r-2 border-black">

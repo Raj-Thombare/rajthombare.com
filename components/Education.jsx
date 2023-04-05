@@ -13,8 +13,8 @@ const Education = ({ education }) => {
               <Image
                 src={item.image}
                 alt={item.name}
-                width={110}
-                height={110}
+                width={100}
+                height={100}
                 className="w-[135px] md:w-[110px] h-auto mb-7 md:mb-0"
                 priority
               />
