@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef } from "react"
 
-export default function SlideUp({ children, offset = "0px" }) {
+const SlideUp = ({ children, offset = "0px" }) => {
   const ref = useRef(null)
 
   useEffect(() => {
@@ -29,3 +29,4 @@ export default function SlideUp({ children, offset = "0px" }) {
     </div>
   )
 }
+export default SlideUp;

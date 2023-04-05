@@ -4,7 +4,7 @@ import { TfiGithub } from "react-icons/tfi";
 import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 import SlideUp from "./SlideUp";
 
-const Projects = ({ project, key }) => {
+const Projects = ({ project }) => {
   const icons = [
     {
       icon: <TfiGithub className="p-[3px]" size={30} />,
