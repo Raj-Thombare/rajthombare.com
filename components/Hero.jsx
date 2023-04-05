@@ -25,11 +25,14 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="w-[100%] min-h-screen md:min-h-full  pt-[50px] pb-10 px-10 text-center md:text-left flex justify-end md:justify-between flex-col-reverse md:flex-row items-center md:items-start"
+      className="w-[100%] min-h-screen md:min-h-full pt-[50px] pb-10 px-10 text-center md:text-left flex justify-end md:justify-between flex-col-reverse md:flex-row items-center md:items-start"
     >
-      <header className="md:w-[60%] pt-7">
+      <header className="md:w-[60%] pt-4">
         <span className="mb-1 block font-slab text-[18px] font-light">
-          Hello there! I&apos;m
+          Hello there!
+          <span className="text-[30px] font-bold ml-1 text-[#8a2be2]">
+            I&apos;m
+          </span>
         </span>
         <h1 className="mb-3 text-5xl md:text-[50px] font-bold mt-2 text-[#2d2e32]">
           Raj Thombare
@@ -64,13 +67,13 @@ const Hero = () => {
         </div>
       </header>
       <Image
-        src={MyPicture}
-        alt="my picture"
-        className="rounded-full md:w-[35%]"
-        priority
-        width={200}
-        height={200}
-      />
+          src={MyPicture}
+          alt="my picture"
+          className="rounded-full md:mt-8 md:w-[35%]"
+          priority
+          width={200}
+          height={200}
+        />
     </div>
   );
 };

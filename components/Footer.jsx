@@ -5,11 +5,11 @@ const Footer = () => {
   const footerLinks = [
     {
       title: "Education",
-      link: "/#about",
+      link: "/#education",
     },
     {
       title: "Skills",
-      link: "/#about",
+      link: "/#skills",
     },
     {
       title: "Projects",

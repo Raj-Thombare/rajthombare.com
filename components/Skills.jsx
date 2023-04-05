@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Skills = ({ skills }) => {
   return (
-    <section className="mb-8 md:mb-20 px-10 pb-10 md:pb-0">
+    <section id="skills" className="mb-8 md:mb-20 px-10 pb-10 md:pb-0">
       <h3 className="mb-[40px] text-[#2d2e32] font-bold text-[32px] border-b-2 pb-1 md:pb-[2px]">
         Skills
       </h3>
