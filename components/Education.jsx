@@ -9,7 +9,7 @@ const Education = ({ education }) => {
       {education.map((item, idx) => {
         return (
           <div className="flex flex-col w-[100%]" key={idx}>
-            <div className="flex flex-col justify-evenly md:flex-row items-center mb-8 md:mb-12 min-h-[140px] p-[18px] bg-white rounded-xl shadow-sm">
+            <div className="flex flex-col justify-evenly md:flex-row items-center mb-8 min-h-[140px] p-[18px] bg-white rounded shadow-sm">
               <Image
                 src={item.image}
                 alt={item.name}

@@ -1,17 +1,18 @@
+import { Fragment } from "react"
 import Link from "next/link";
+import BlogCard from "./BlogCard";
 
 const FeaturedBlogs = ({ blog }) => {
   return (
-    <section id="projects" className="px-10 mb-10 lg:mt-0 lg:mb-10">
+    <section id="blogs" className="px-10 mb-10 lg:mt-0 lg:mb-10">
       <h3 className="mb-[40px] text-[#2d2e32] font-bold text-[32px] border-b-2 pb-1 md:pb-[2px]">
         Blogs
       </h3>
       <div className="flex flex-col space-y-4">
         {blog.slice(0,3).map((item, idx)=>{
-            return <div key={idx} className="px-8 py-5 bg-white">
-                <h1 className="font-medium text-lg">{item.title}</h1>
-                <span className="font-slab font-light text-[16px]">1,269 views</span>
-            </div>
+            return <Fragment key={idx}>
+              <BlogCard blog={item} />
+            </Fragment>
         })}
       </div>
       <div className="w-full">
