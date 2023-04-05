@@ -29,7 +29,7 @@ const Navbar = () => {
     },
     {
       title: "Connect",
-      link: "/#contact",
+      link: "/connect",
     },
     {
       title: "Skills",
@@ -38,7 +38,7 @@ const Navbar = () => {
     {
       title: "Education",
       link: "/#education",
-    }
+    },
   ];
 
   return (

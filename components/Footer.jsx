@@ -21,7 +21,7 @@ const Footer = () => {
     },
     {
       title: "Connect",
-      link: "/#contact",
+      link: "/connect",
     },
   ];
 

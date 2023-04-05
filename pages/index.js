@@ -11,7 +11,7 @@ export default function HomePage({ mySkills, myProjects, myEducation, myBlogs })
   return (
     <>
       <Head>
-        <title>Raj Thombare</title>
+        <title>Home | Raj Thombare</title>
         <meta name="description" content="Raj Thombare" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
