@@ -30,6 +30,14 @@ const Navbar = () => {
     {
       title: "Connect",
       link: "/#contact",
+    },
+    {
+      title: "Skills",
+      link: "/#skills",
+    },
+    {
+      title: "Education",
+      link: "/#education",
     }
   ];
 
@@ -47,7 +55,7 @@ const Navbar = () => {
           />
         </Link>
         <ul className="hidden md:flex">
-          {navLinks.map((nav)=>{
+          {navLinks.slice(0,4).map((nav)=>{
             return (
               <li key={nav.title}>
                 <Link href={nav.link} className={` ${

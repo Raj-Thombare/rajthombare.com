@@ -37,7 +37,7 @@ const Hero = () => {
         <h1 className="mb-3 text-5xl md:text-[50px] font-bold mt-2 text-[#2d2e32]">
           Raj Thombare
         </h1>
-        <h2 className="mb-5 text-3xl md:text-[35px] font-bold mt-6 md:mt-2 text-[#2d2e32]">
+        <h2 className="mb-4 text-3xl md:text-[35px] font-bold mt-4 text-[#2d2e32]">
           Full Stack Software Engineer
         </h2>
         <p
