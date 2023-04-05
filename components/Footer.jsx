@@ -4,15 +4,19 @@ const Footer = () => {
 
   const footerLinks = [
     {
-      title: "About",
-      link: "#about",
+      title: "Education",
+      link: "/#about",
+    },
+    {
+      title: "Skills",
+      link: "/#about",
     },
     {
       title: "Projects",
       link: "/projects",
     },
     {
-      title: "Posts",
+      title: "Blogs",
       link: "/blogs",
     },
     {

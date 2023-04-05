@@ -28,7 +28,7 @@ const Navbar = () => {
       link: "/blogs",
     },
     {
-      title: "Contact",
+      title: "Connect",
       link: "/#contact",
     }
   ];
