@@ -1,7 +1,6 @@
-import Link from "next/link"
+import Link from "next/link";
 
-const Footer = () => {
-
+const Footer: React.FC = () => {
   const footerLinks = [
     {
       title: "Education",
@@ -96,7 +95,7 @@ const Footer = () => {
         <p>
           Copyright © 2023
           <a
-            className="mx-2 text-[#8a2be2] hover:opacity-75"
+            className="mx-2 text-black hover:opacity-75"
             href="https://rajthombare.vercel.app"
             target="_blank"
           >

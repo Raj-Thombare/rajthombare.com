@@ -1,6 +1,11 @@
 import Image from "next/image";
+import { IEducation } from "@/models/types";
 
-const Education = ({ education }) => {
+type Props = {
+  education: IEducation[];
+};
+
+const Education: React.FC<Props> = ({ education }) => {
   return (
     <section className="px-10">
       <h3 className="mb-[40px] text-[#2d2e32] font-bold text-[32px] border-b-2 pb-1 md:pb-[2px]">

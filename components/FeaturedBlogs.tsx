@@ -1,8 +1,13 @@
 import { Fragment } from "react"
 import Link from "next/link";
 import BlogCard from "./BlogCard";
+import { IBlogs } from "@/models/types";
 
-const FeaturedBlogs = ({ blog }) => {
+type Props = {
+  blog: IBlogs[],
+};
+
+const FeaturedBlogs: React.FC<Props> = ({ blog }) => {
   return (
     <section id="blogs" className="px-10 mb-10 lg:mt-0 lg:mb-10">
       <h3 className="mb-[40px] text-[#2d2e32] font-bold text-[32px] border-b-2 pb-1 md:pb-[2px]">

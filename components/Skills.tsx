@@ -1,6 +1,11 @@
 import Image from "next/image";
+import { ISkills } from "@/models/types";
 
-const Skills = ({ skills }) => {
+type Props = {
+  skills:ISkills[]
+}
+
+const Skills: React.FC<Props> = ({ skills }) => {
   return (
     <section id="skills" className="mb-8 md:mb-20 px-10 pb-10 md:pb-0">
       <h3 className="mb-[40px] text-[#2d2e32] font-bold text-[32px] border-b-2 pb-1 md:pb-[2px]">
@@ -16,9 +21,7 @@ const Skills = ({ skills }) => {
               src={skill.image}
               className="w-[40px] h-[40px]"
             />
-            <p className={"font-slab text-sm mt-2.5 pt-1.5"}>
-              {skill.title}
-            </p>
+            <p className={"font-slab text-sm mt-2.5 pt-1.5"}>{skill.title}</p>
           </div>
         ))}
       </div>

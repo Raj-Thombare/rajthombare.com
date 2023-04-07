@@ -1,7 +1,12 @@
 import Link from "next/link";
 import SlideUp from "./SlideUp";
+import { IBlogs } from "@/models/types";
 
-const BlogCard = ({ blog }) => {
+type Props = {
+  blog: IBlogs,
+};
+
+const BlogCard: React.FC<Props> = ({ blog }) => {
   return (
     <SlideUp offset="-100px 0px -50px 0px">
       <div className="flex flex-col items-center justify-left animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12 ">

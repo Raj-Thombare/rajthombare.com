@@ -5,8 +5,7 @@ import { CgTwitter } from "react-icons/cg";
 import { DiGithubFull } from "react-icons/di";
 import { FcDocument } from "react-icons/fc";
 
-const Hero = () => {
-
+const Hero: React.FC = () => {
   const socialIcons = [
     {
       icon: <DiGithubFull size={30} />,
@@ -30,7 +29,7 @@ const Hero = () => {
       <header className="md:w-[60%] pt-4">
         <span className="mb-1 block font-slab text-[18px] font-light">
           Hello there!
-          <span className="text-[30px] font-bold ml-1 text-[#8a2be2]">
+          <span className="text-[30px] font-light ml-2 text-[#2d2e32]">
             I&apos;m
           </span>
         </span>
@@ -67,13 +66,13 @@ const Hero = () => {
         </div>
       </header>
       <Image
-          src={MyPicture}
-          alt="my picture"
-          className="rounded-full md:mt-8 md:w-[35%]"
-          priority
-          width={200}
-          height={200}
-        />
+        src={MyPicture}
+        alt="my picture"
+        className="rounded-full md:mt-8 md:w-[35%]"
+        priority
+        width={200}
+        height={200}
+      />
     </div>
   );
 };

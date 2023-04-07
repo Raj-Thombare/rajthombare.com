@@ -3,8 +3,13 @@ import Link from "next/link";
 import { TfiGithub } from "react-icons/tfi";
 import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 import SlideUp from "./SlideUp";
+import { IProjects } from "@/models/types";
 
-const ProjectCard = ({ project }) => {
+type Props = {
+  project: IProjects;
+};
+
+const ProjectCard: React.FC<Props> = ({ project }) => {
   const icons = [
     {
       icon: <TfiGithub className="p-[3px]" size={30} />,

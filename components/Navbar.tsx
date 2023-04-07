@@ -1,13 +1,13 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router"
+import { useRouter } from "next/router";
 import Logo from "../public/logo.png";
 import { BiMenuAltRight } from "react-icons/bi";
 import { IoMdClose } from "react-icons/io";
 
-const Navbar = () => {
-  const [nav, setNav] = useState(false);
+const Navbar: React.FC = () => {
+  const [nav, setNav] = useState<boolean>(false);
   const router = useRouter();
 
   const navHandler = () => {
@@ -55,19 +55,24 @@ const Navbar = () => {
           />
         </Link>
         <ul className="hidden md:flex">
-          {navLinks.slice(0,4).map((nav)=>{
+          {navLinks.slice(0, 4).map((nav) => {
             return (
               <li key={nav.title}>
-                <Link href={nav.link} className={` ${
-                  router.pathname === nav.link ? 'text-black font-semibold' : 'opacity-75'
-                } hover:text-black hover:opacity-100`}>
+                <Link
+                  href={nav.link}
+                  className={` ${
+                    router.pathname === nav.link
+                      ? "text-black font-semibold"
+                      : "opacity-75"
+                  } hover:text-black hover:opacity-100`}
+                >
                   {nav.title}
                 </Link>
               </li>
             );
           })}
         </ul>
-          
+
         <div className="md:hidden cursor-pointer">
           <BiMenuAltRight size={45} onClick={navHandler} />
         </div>
@@ -82,13 +87,18 @@ const Navbar = () => {
           <IoMdClose size={45} onClick={navHandler} />
         </div>
         <ul className="w-full h-full flex flex-col justify-center items-center bg-[#2d2e32] md:bg-transparent">
-          {navLinks.map((nav)=>{
+          {navLinks.map((nav) => {
             return (
               <li key={nav.title} className="m-3">
-                <Link href={nav.link} className={` ${
-                  router.pathname === nav.link ? 'text-black font-semibold' : 'opacity-75'
-                } text-4xl text-white md:text-black hover:opacity-75`}
-                onClick={navHandler}>
+                <Link
+                  href={nav.link}
+                  className={` ${
+                    router.pathname === nav.link
+                      ? "text-black font-semibold"
+                      : "opacity-75"
+                  } text-4xl text-white md:text-black hover:opacity-75`}
+                  onClick={navHandler}
+                >
                   {nav.title}
                 </Link>
               </li>
