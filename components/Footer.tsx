@@ -96,8 +96,7 @@ const Footer: React.FC = () => {
           Copyright © 2023
           <a
             className="mx-2 text-black hover:opacity-75"
-            href="https://rajthombare.vercel.app"
-            target="_blank"
+            href="#home"
           >
             • Raj Thombare
           </a>
