@@ -3,9 +3,9 @@
 import React, { useEffect, useRef } from "react";
 
 type Props = {
-  children:JSX.Element,
-  offset:string,
-}
+  children: JSX.Element;
+  offset: string;
+};
 
 const SlideUp: React.FC<Props> = ({ children, offset = "0px" }) => {
   const ref = useRef(null);
@@ -20,7 +20,7 @@ const SlideUp: React.FC<Props> = ({ children, offset = "0px" }) => {
           }
         });
       },
-      { rootMargin: offset }
+      { rootMargin: offset },
     );
 
     if (ref.current) {
@@ -29,7 +29,7 @@ const SlideUp: React.FC<Props> = ({ children, offset = "0px" }) => {
   }, [ref]);
 
   return (
-    <div ref={ref} className="relative opacity-0">
+    <div ref={ref} className='relative opacity-0'>
       {children}
     </div>
   );
