@@ -4,7 +4,7 @@ import { EDUCATIONS } from "../data/education";
 import { Badge } from "../ui/badge";
 import { LinkPreview } from "../animations/link-preview";
 
-export default function Job() {
+export default function Education() {
   return (
     <section>
       <Slide delay={0.18}>
