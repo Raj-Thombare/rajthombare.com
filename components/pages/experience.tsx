@@ -4,7 +4,7 @@ import { JOBS } from "../data/job";
 import { formatDate } from "@/lib/date";
 import { LinkPreview } from "../animations/link-preview";
 
-export default function Job() {
+export default function Experience() {
   return (
     <section>
       <Slide delay={0.18}>
