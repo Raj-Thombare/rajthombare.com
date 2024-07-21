@@ -25,6 +25,13 @@ module.exports = {
         incognito: ["var(--incognito)"],
         inter: ["var(--inter)"],
       },
+      colors: {
+        "primary-color": "#FB576F",
+        "secondary-color": "#0CCE6B",
+        "tertiary-color": "#16a34a",
+        "primary-bg": "rgba(39, 39, 43, 0.4)",
+        "secondary-bg": "rgba(250, 250, 250, 0.4)",
+      },
       animation: {
         slideUpCubiBezier: "slideUp 1s cubic-bezier(0.165, 0.84, 0.44, 1)",
       },
