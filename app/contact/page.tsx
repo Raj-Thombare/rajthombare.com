@@ -4,12 +4,11 @@ export default function Contact() {
   return (
     <section className='px-10 mb-10 lg:mt-0 lg:mb-10'>
       <h3 className='mb-[40px] text-[#2d2e32] font-bold text-[32px] border-b-2 pb-1 md:pb-[2px]'>
-        Connect with me
+        Contact Me
       </h3>
       <div className='h-[50vh] flex flex-col justify-center items-center'>
         <div className='text-[18px] mb-9 md:mb-6'>
-          I&apos;m available for freelance work. Drop me a line if you fancy a
-          chat.
+          Feel free me message me on any queries or for any collaboration
         </div>
         <p className='text-xl md:text-3xl mb-9 md:mb-6 font-light text-[#2d2e32] '>
           Rajthombare3524@gmail.com

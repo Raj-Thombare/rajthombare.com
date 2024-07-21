@@ -1,32 +1,96 @@
-import Image from "next/image";
-import { ISkills } from "@/models/types";
+import { LANGUAGES, FRAMEWORKS, DATABASES, DEVOPS } from "../data/skills";
+import Link from "next/link";
+import { Slide } from "../animations/Slide";
 
-type Props = {
-  skills:ISkills[]
-}
-
-const Skills: React.FC<Props> = ({ skills }) => {
-  return (
-    <section id="skills" className="mb-8 md:mb-20 px-10 pb-10 md:pb-0">
-      <h3 className="mb-[40px] text-[#2d2e32] font-bold text-[32px] border-b-2 pb-1 md:pb-[2px]">
-        Skills
-      </h3>
-      <div className="grid grid-cols-3 md:grid-cols-6 gap-8 md:justify-items-center items-end overflow-hidden">
-        {skills.map((skill, idx) => (
-          <div key={idx} className="flex flex-col items-center">
-            <Image
-              alt={skill.title}
-              width={40}
-              height={40}
-              src={skill.image}
-              className="w-[40px] h-[40px]"
-            />
-            <p className={"font-slab text-sm mt-2.5 pt-1.5"}>{skill.title}</p>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
+export type SkillProps = {
+  name: string;
+  icon: JSX.Element;
+  link: string;
 };
 
-export default Skills;
+function SkillPill(props: SkillProps) {
+  const { name, icon } = props;
+
+  return (
+    <div className='flex w-max items-center gap-2 overflow-hidden rounded-md border border-cyan-900/90 hover:border-cyan-300 px-4 py-2 text-sm bg-zinc-800/70 sm:text-base md:px-6 md:py-3 md:text-lg'>
+      {icon}
+      <span className='font-medium'>{name}</span>
+    </div>
+  );
+}
+
+export default function Skills() {
+  return (
+    <>
+      <section className=' py-4 font-incognito'>
+        <div className='relative mx-auto max-w-6xl'>
+          <Slide delay={0.14}>
+            <div className='mt-5 flex flex-col md:flex-row justify-start items-center'>
+              <p className='font-semibold text-xl text-center md:text-left min-w-[324px]'>
+                Languages
+              </p>
+              <div className='mt-2 flex flex-wrap justify-center md:justify-start gap-4 text-xl text-zinc-200'>
+                {LANGUAGES.map(({ icon, name, link }, i) => (
+                  <Link href={link} key={i} target='_blank'>
+                    <SkillPill icon={icon} name={name} key={i} link={link} />
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div className='mt-5 flex flex-col md:flex-row justify-start items-center'>
+              <p className='font-semibold text-xl text-center md:text-left min-w-[324px]'>
+                Libraries and Frameworks
+              </p>
+              <div className='mt-2 flex flex-wrap gap-4 text-xl justify-center md:justify-start text-zinc-200'>
+                {FRAMEWORKS.map(({ icon, name, link }, index) => (
+                  <Link href={link} key={index} target='_blank'>
+                    <SkillPill
+                      icon={icon}
+                      name={name}
+                      key={index}
+                      link={link}
+                    />
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div className='mt-5 flex flex-col md:flex-row justify-start items-center'>
+              <p className='font-semibold text-xl text-center md:text-left min-w-[324px]'>
+                Databases and ORM
+              </p>
+              <div className='mt-2 flex flex-wrap gap-4 justify-center md:justify-start text-zinc-200'>
+                {DATABASES.map(({ icon, name, link }, index) => (
+                  <Link href={link} key={index} target='_blank'>
+                    <SkillPill
+                      icon={icon}
+                      name={name}
+                      key={index}
+                      link={link}
+                    />
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div className='mt-5 flex flex-col md:flex-row justify-start items-center'>
+              <p className='text-xl font-semibold text-center md:text-left min-w-[324px]'>
+                Devops and Tools
+              </p>
+              <div className='mt-2 flex flex-wrap gap-4 justify-center md:justify-start text-zinc-200'>
+                {DEVOPS.map(({ icon, name, link }, index) => (
+                  <Link href={link} key={index} target='_blank'>
+                    <SkillPill
+                      icon={icon}
+                      name={name}
+                      key={index}
+                      link={link}
+                    />
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </Slide>
+        </div>
+      </section>
+    </>
+  );
+}
