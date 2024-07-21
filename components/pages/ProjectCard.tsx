@@ -39,7 +39,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
         <div className='mt-5 px-2.5 py-2.5 h-auto md:min-h-[200px] md:w-1/2 md:mt-0 flex flex-col md:justify-between'>
           <div className='mb-2.5 md:mb-0'>
             <h1 className='font-bold text-2xl mb-1.5'>{project.name}</h1>
-            <p className={"font-slab font-light text-md mb-2.5"}>
+            <p className={" font-light text-md mb-2.5"}>
               {project.description}
             </p>
           </div>

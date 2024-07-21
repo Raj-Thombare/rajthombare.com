@@ -1,15 +1,9 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      "@/*": ["./*"]
     },
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -33,9 +27,8 @@
     "**/*.ts",
     "**/*.tsx",
     "app/connect.js",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "tailwind.config.js"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }

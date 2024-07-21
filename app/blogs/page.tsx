@@ -15,7 +15,7 @@ export default function Blogs({ myBlogs }: Props) {
       <h3 className='mb-[40px] text-[#2d2e32] font-bold text-[32px] border-b-2 pb-1 md:pb-[2px]'>
         Blogs
       </h3>
-      <div className='flex flex-col space-y-6'>
+      {/* <div className='flex flex-col space-y-6'>
         {myBlogs.map((blog, idx) => {
           return (
             <Fragment key={idx}>
@@ -23,7 +23,7 @@ export default function Blogs({ myBlogs }: Props) {
             </Fragment>
           );
         })}
-      </div>
+      </div> */}
     </section>
   );
 }

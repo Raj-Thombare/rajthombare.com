@@ -12,7 +12,7 @@ export default function Projects({ myProjects }: Props) {
       <h3 className='mb-[40px] text-[#2d2e32] font-bold text-[32px] border-b-2 pb-1 md:pb-[2px]'>
         Projects
       </h3>
-      <div className='flex flex-col space-y-20'>
+      {/* <div className='flex flex-col space-y-20'>
         {myProjects.map((project, idx) => {
           return (
             <Fragment key={idx}>
@@ -20,7 +20,7 @@ export default function Projects({ myProjects }: Props) {
             </Fragment>
           );
         })}
-      </div>
+      </div> */}
     </section>
   );
 }

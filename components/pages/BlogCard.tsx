@@ -14,16 +14,12 @@ const BlogCard: React.FC<Props> = ({ blog }) => {
           <Link href={blog.link} target='_blank'>
             <h1 className='font-medium text-lg'>{blog.title}</h1>
           </Link>
-          <p className='pt-[2px] pb-3 md:pb-2 font-slab font-light text-[14px]'>
+          <p className='pt-[2px] pb-3 md:pb-2  font-light text-[14px]'>
             {blog.description}
           </p>
           <div className='flex justify-between'>
-            <span className='font-slab font-light text-[14px]'>
-              {blog.duration}
-            </span>
-            <span className='font-slab font-light text-[14px]'>
-              {blog.date}
-            </span>
+            <span className=' font-light text-[14px]'>{blog.duration}</span>
+            <span className=' font-light text-[14px]'>{blog.date}</span>
           </div>
         </div>
       </div>
