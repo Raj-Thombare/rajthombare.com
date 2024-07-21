@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    html {
+        scroll-behavior: smooth !important;
+    }
+
+    body {
+        background-image: url("/noise.png");
+            background-size: 200px 200px;
+            background-position: 0 0;
+        margin: auto;
+    }
+
+                                h1,
+                                h2,
+                                h3,
+                                h4 {
+                                    font-family: var(--incognito), "Inter", sans-serif;
+                                }
+    li {
+        padding: 0px 12px;
+    }
+
+    li a {
+        font-size: 17px;
+        color: white;
+        font-weight: 500;
+    }
+}
+
+@layer components {
+    .social-icon {
+        @apply mx-2 p-2.5 md:p-2 text-white rounded-[50%] hover:translate-y-[-10px] transition ease-in-out delay-75 duration-200
+        }
+        
+        .container {
+            @apply w-full mx-auto
+    }
+}

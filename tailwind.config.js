@@ -12,12 +12,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      gridTemplateColumns: {
+        custom: "1.5fr 1fr",
+      },
       screens: {
-        sm: "480px", md: "768px", lg: "976px", xl: "1440px"
+        sm: "480px",
+        md: "768px",
+        lg: "976px",
+        xl: "1440px",
       },
       fontFamily: {
-        slab: ['var(--font-roboto-slab)'],
-        poppins: ['var(--font-poppins)'],
+        incognito: ["var(--incognito)"],
+        inter: ["var(--inter)"],
       },
       animation: {
         slideUpCubiBezier: "slideUp 1s cubic-bezier(0.165, 0.84, 0.44, 1)",
@@ -43,15 +49,15 @@ module.exports = {
         },
       },
       colors: {
-        'white-rgba': 'rgb(255 255 255 / 59%)'
+        "white-rgba": "rgb(255 255 255 / 59%)",
       },
       boxShadow: {
-        'nav': 'rgba(0, 0, 0, 0.18) 0px 2px 4px',
+        nav: "rgba(0, 0, 0, 0.18) 0px 2px 4px",
       },
       listStyleType: {
-        square: 'square'
-      }
+        square: "square",
+      },
     },
   },
   plugins: [],
-}
+};
