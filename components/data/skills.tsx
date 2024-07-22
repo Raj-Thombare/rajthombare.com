@@ -1,12 +1,12 @@
 import {
-  BashIcon,
+  CppIcon,
   ExpressIcon,
   JavascriptIcon,
   MongoIcon,
   NextIcon,
   PostgresIcon,
   ReactIcon,
-  RedisIcon,
+  CssIcon,
   TailwindIcon,
   TypescriptIcon,
   FirebaseIcon,
@@ -17,10 +17,11 @@ import {
   PrismaIcon,
   AuthIcon,
   AwsIcon,
-  GcpIcon,
-  JenkinsIcon,
+  HtmlIcon,
+  NpmIcon,
   ZodIcon,
   CFIcon,
+  ReduxIcon,
 } from "@/components/icons";
 
 export type SkillProps = {
@@ -40,15 +41,25 @@ export const LANGUAGES: SkillProps[] = [
     icon: <TypescriptIcon />,
     link: "https://www.typescriptlang.org/",
   },
-  //   {
-  //     name: "Bash",
-  //     icon: <BashIcon />,
-  //     link: "https://www.gnu.org/software/bash/",
-  //   },
   {
     name: "Python",
     icon: <PythonIcon />,
     link: "https://www.python.org/",
+  },
+  {
+    name: "C++",
+    icon: <CppIcon />,
+    link: "https://cplusplus.com/",
+  },
+  {
+    name: "HTML",
+    icon: <HtmlIcon />,
+    link: "https://html.com/",
+  },
+  {
+    name: "CSS",
+    icon: <CssIcon />,
+    link: "https://www.w3schools.com/css/",
   },
 ];
 
@@ -69,11 +80,6 @@ export const FRAMEWORKS: SkillProps[] = [
     link: "https://authjs.dev/",
   },
   {
-    name: "Zod",
-    icon: <ZodIcon />,
-    link: "https://zod.dev/",
-  },
-  {
     name: "Express",
     icon: <ExpressIcon />,
     link: "https://expressjs.com/",
@@ -84,6 +90,16 @@ export const FRAMEWORKS: SkillProps[] = [
     link: "https://hono.dev/",
   },
   {
+    name: "Redux",
+    icon: <ReduxIcon />,
+    link: "https://redux.js.org/",
+  },
+  {
+    name: "Zod",
+    icon: <ZodIcon />,
+    link: "https://zod.dev/",
+  },
+  {
     name: "Tailwindcss",
     icon: <TailwindIcon />,
     link: "https://tailwindcss.com/",
@@ -92,29 +108,24 @@ export const FRAMEWORKS: SkillProps[] = [
 
 export const DATABASES: SkillProps[] = [
   {
-    name: "MongoDB",
-    icon: <MongoIcon />,
-    link: "https://www.mongodb.com/",
-  },
-  {
     name: "Postgres",
     icon: <PostgresIcon />,
     link: "https://www.postgresql.org/",
-  },
-  //   {
-  //     name: "Redis",
-  //     icon: <RedisIcon />,
-  //     link: "https://redis.io/",
-  //   },
-  {
-    name: "Firebase",
-    icon: <FirebaseIcon />,
-    link: "https://firebase.google.com/",
   },
   {
     name: "Prisma",
     icon: <PrismaIcon />,
     link: "https://www.prisma.io/",
+  },
+  {
+    name: "MongoDB",
+    icon: <MongoIcon />,
+    link: "https://www.mongodb.com/",
+  },
+  {
+    name: "Firebase",
+    icon: <FirebaseIcon />,
+    link: "https://firebase.google.com/",
   },
 ];
 
@@ -134,19 +145,14 @@ export const DEVOPS: SkillProps[] = [
     icon: <AwsIcon />,
     link: "https://aws.amazon.com/",
   },
-  //   {
-  //     name: "GCP",
-  //     icon: <GcpIcon />,
-  //     link: "https://cloud.google.com/",
-  //   },
   {
     name: "Cloudflare",
     icon: <CFIcon />,
     link: "https://www.cloudflare.com/",
   },
-  //   {
-  //     name: "Jenkins",
-  //     icon: <JenkinsIcon />,
-  //     link: "https://www.jenkins.io/",
-  //   },
+  {
+    name: "NPM",
+    icon: <NpmIcon />,
+    link: "https://www.npmjs.com/",
+  },
 ];
