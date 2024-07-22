@@ -5,7 +5,7 @@ import { Slide } from "@/components/animations/Slide";
 import { WobbleCard } from "@/components/animations/WobbleCard";
 import { BiLinkExternal } from "react-icons/bi";
 import Experience from "@/components/pages/experience";
-import Education from "@/components/pages/education_temp";
+import Education from "@/components/pages/education";
 import Skills from "@/components/pages/Skills";
 import Social from "@/components/shared/Social";
 

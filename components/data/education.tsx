@@ -14,7 +14,7 @@ export const EDUCATIONS: EducationProps[] = [
     id: "AUM",
     name: "Amity University Mumbai",
     url: "https://www.amity.edu/mumbai/",
-    logo: "/edu/amity.jpeg",
+    logo: "/education/amity.jpeg",
     startDate: "Sept 2023",
     endDate: "June 2025",
     description:
@@ -25,7 +25,7 @@ export const EDUCATIONS: EducationProps[] = [
     id: "CSMU",
     name: "Chhatrapati Shivaji Maharaj University",
     url: "https://csmu.ac.in/",
-    logo: "/edu/csmu.png",
+    logo: "/education/csmu.png",
     startDate: "Sept 2019",
     endDate: "July 2022",
     description:
@@ -36,7 +36,7 @@ export const EDUCATIONS: EducationProps[] = [
     id: "rfsc",
     name: "Reliance Foundation School",
     url: "https://www.rfs.edu.in/Lodhivali-MM/",
-    logo: "/edu/rfsc.png",
+    logo: "/education/rfsc.png",
     startDate: "2014",
     endDate: "2019",
     description:
