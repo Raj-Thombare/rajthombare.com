@@ -22,6 +22,7 @@ import {
   ZodIcon,
   CFIcon,
   ReduxIcon,
+  NodeIcon,
 } from "@/components/icons";
 
 export type SkillProps = {
@@ -51,26 +52,16 @@ export const LANGUAGES: SkillProps[] = [
     icon: <CppIcon />,
     link: "https://cplusplus.com/",
   },
-  {
-    name: "HTML",
-    icon: <HtmlIcon />,
-    link: "https://html.com/",
-  },
-  {
-    name: "CSS",
-    icon: <CssIcon />,
-    link: "https://www.w3schools.com/css/",
-  },
 ];
 
 export const FRAMEWORKS: SkillProps[] = [
   {
-    name: "React",
+    name: "React.js",
     icon: <ReactIcon />,
     link: "https://reactjs.org/",
   },
   {
-    name: "Nextjs",
+    name: "Next.js",
     icon: <NextIcon />,
     link: "https://nextjs.org/",
   },
@@ -78,6 +69,11 @@ export const FRAMEWORKS: SkillProps[] = [
     name: "Auth.js",
     icon: <AuthIcon />,
     link: "https://authjs.dev/",
+  },
+  {
+    name: "Node.js",
+    icon: <NodeIcon />,
+    link: "https://nodejs.org/en",
   },
   {
     name: "Express",
