@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <footer className='border-t border-zinc-800  mt-10 lg:min-h-full min-h-full relative'>
       <div className='max-w-7xl mx-auto flex lg:flex-row flex-col items-center lg:justify-between justify-center gap-y-4 md:px-16 px-6 py-8'>
-        <div className='flex md:flex-row flex-col items-center gap-x-2 font-incognito'>
+        <div className='flex flex-row items-center gap-x-2 font-incognito'>
           <h3 className='font-inter'>Built with ❤️ using</h3>
           <a
             href='https://nextjs.org'
