@@ -18,12 +18,7 @@ export default function Footer() {
             target='_blank'
             className='flex items-center gap-x-2 text-white  hover:underline'
           >
-            <Image
-              src='/skills/nextjs.svg'
-              width={20}
-              height={20}
-              alt='nextjs logo'
-            />
+            <Image src='/nextjs.svg' width={20} height={20} alt='nextjs logo' />
             Next.js
           </a>
         </div>
