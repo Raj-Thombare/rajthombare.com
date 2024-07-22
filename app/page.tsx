@@ -108,7 +108,10 @@ export default function Home() {
           </Slide>
 
           <Slide delay={0.18}>
-            <h1 className='font-incognito font-semibold tracking-tight sm:text-3xl text-xl lg:leading-tight basis-1/2 mb-4 mt-12'>
+            <h1
+              id='education'
+              className='font-incognito font-semibold tracking-tight sm:text-3xl text-xl lg:leading-tight basis-1/2 mb-4 mt-12'
+            >
               Education
             </h1>
             <div className='px-4'>
@@ -117,7 +120,10 @@ export default function Home() {
           </Slide>
 
           <Slide delay={0.18}>
-            <h1 className='font-incognito font-semibold tracking-tight sm:text-3xl text-xl lg:leading-tight basis-1/2 mb-4 mt-12'>
+            <h1
+              id='skills'
+              className='font-incognito font-semibold tracking-tight sm:text-3xl text-xl lg:leading-tight basis-1/2 mb-4 mt-12'
+            >
               Technical Skills
             </h1>
             <div className='px-4'>
