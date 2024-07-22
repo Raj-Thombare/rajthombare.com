@@ -1,11 +1,11 @@
 import Image from "next/image";
-import MyPicture from "../public/profile.jpg";
+import MyPicture from "../public/profile_raj.jpg";
 import { ImageWobble } from "@/components/animations/ImageWobble";
 import { Slide } from "@/components/animations/Slide";
 import { WobbleCard } from "@/components/animations/WobbleCard";
 import { BiLinkExternal } from "react-icons/bi";
 import Experience from "@/components/pages/experience";
-import Education from "@/components/pages/Education";
+import Education from "@/components/pages/education_temp";
 import Skills from "@/components/pages/Skills";
 import Social from "@/components/shared/Social";
 
