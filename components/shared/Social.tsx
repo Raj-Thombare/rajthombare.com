@@ -18,7 +18,7 @@ export default function Social({ type }: { type: string }) {
                     <value.icon
                       className='flex-shrink-0 h-6 w-6 text-zinc-500 group-hover:text-white  duration-300'
                       aria-hidden='true'
-                    />{" "}
+                    />
                     &nbsp;
                     {value.name}
                   </a>

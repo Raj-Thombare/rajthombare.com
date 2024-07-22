@@ -22,7 +22,14 @@ export default function Appbar() {
   const pathname = usePathname();
 
   const navHandler = () => {
-    setNav((prev) => !prev);
+    setNav((status) => {
+      if (status) {
+        document.body.style.overflow = "auto";
+      } else {
+        document.body.style.overflow = "hidden";
+      }
+      return !status;
+    });
   };
 
   return (
@@ -31,7 +38,7 @@ export default function Appbar() {
         <Link href='/' className='flex items-center flex-row gap-x-4'>
           <Image src={Logo} width={45} height={45} alt='logo' />
           <div className='py-1'>
-            <h1 className='font-incognito font-semibold text-xl'>
+            <h1 className='font-incognito font-semibold text-2xl'>
               Raj Thombare
             </h1>
           </div>
@@ -57,14 +64,16 @@ export default function Appbar() {
       </nav>
       {/* Mobile Menu */}
       <div
-        className={`sm:hidden w-[100%] fixed top-0 right-0 bottom-0 p-0 m-0 flex justify-center items-center h-screen z-50 backdrop-saturate-[180%] backdrop-blur text-center ${
+        className={`sm:hidden w-[100%] fixed top-0 right-0 bottom-0 p-0 m-0 flex justify-center items-center h-screen z-50 backdrop-saturate-50 backdrop-blur text-center ${
           nav ? "translate-x-0" : "translate-x-full"
         } ease-in-out duration-300`}
       >
         <div className='fixed top-[25px] right-[35px] text-white md:text-black'>
           <IoMdClose size={45} onClick={navHandler} />
         </div>
-        <ul className='w-full h-full flex flex-col justify-center items-center bg-[#2d2e32] md:bg-transparent'>
+        <ul
+          className={`w-full h-full flex flex-col justify-center items-center md:bg-transparent`}
+        >
           {navLinks.map((nav) => (
             <li key={nav.title} className='m-3'>
               <Link
