@@ -20,3 +20,8 @@ export * from './jenkins';
 export * from './gcp';
 export * from './zod';
 export * from './cf';
+export * from './cpp';
+export * from './redux';
+export * from './npm';
+export * from './html';
+export * from './css';
