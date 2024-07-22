@@ -17,13 +17,6 @@ export const socialLinks = [
   },
   {
     id: 2,
-    name: "X",
-    url: "https://twitter.com/rajth0mbare",
-    icon: FaSquareXTwitter,
-    status: "social",
-  },
-  {
-    id: 3,
     name: "Linkedin",
     url: "https://linkedin.com/in/rajthombare",
     icon: BiLogoLinkedinSquare,
@@ -41,6 +34,13 @@ export const socialLinks = [
     name: "Docker",
     url: "https://hub.docker.com/u/rajthombare",
     icon: BiLogoDocker,
+    status: "social",
+  },
+  {
+    id: 5,
+    name: "X",
+    url: "https://twitter.com/rajth0mbare",
+    icon: FaSquareXTwitter,
     status: "social",
   },
 ];
