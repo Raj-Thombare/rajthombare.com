@@ -42,15 +42,14 @@ export default function Appbar() {
             </h1>
           </div>
         </Link>
-        <ul className='hidden md:flex'>
+        <ul className='hidden md:flex gap-x-8'>
           {navLinks.slice(0, 4).map((nav) => (
             <li key={nav.title}>
               <Link
                 href={nav.link}
                 className={`${
                   pathname === nav.link ? "font-semibold" : "opacity-75"
-                } font-incognito text-white  hover:text-cyan-600  duration-300 text-base hover:opacity-100`}
-              >
+                } font-incognito text-white  hover:text-cyan-600  duration-300 text-base hover:opacity-100`}>
                 {nav.title}
               </Link>
             </li>
@@ -65,14 +64,12 @@ export default function Appbar() {
       <div
         className={`sm:hidden w-[100%] fixed top-0 right-0 bottom-0 p-0 m-0 flex justify-center items-center h-screen z-50 backdrop-saturate-50 backdrop-blur text-center ${
           nav ? "translate-x-0" : "translate-x-full"
-        } ease-in-out duration-300`}
-      >
+        } ease-in-out duration-300`}>
         <div className='fixed top-[25px] right-[35px] text-white md:text-black'>
           <IoMdClose size={45} onClick={navHandler} />
         </div>
         <ul
-          className={`w-full h-full flex flex-col justify-center items-center md:bg-transparent`}
-        >
+          className={`w-full h-full flex flex-col justify-center items-center md:bg-transparent`}>
           {navLinks.map((nav) => (
             <li key={nav.title} className='m-3'>
               <Link
@@ -82,8 +79,7 @@ export default function Appbar() {
                     ? "text-black font-semibold"
                     : "opacity-75"
                 } text-4xl font-incognito text-white md:text-black hover:opacity-75`}
-                onClick={navHandler}
-              >
+                onClick={navHandler}>
                 {nav.title}
               </Link>
             </li>
