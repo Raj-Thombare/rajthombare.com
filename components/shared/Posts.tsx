@@ -3,6 +3,7 @@ import { Button } from "../ui/button";
 import Image from "next/image";
 import { BiLinkExternal, BiLogoGithub } from "react-icons/bi";
 import { LinkPreview } from "../animations/link-preview";
+import { formatDate } from "@/lib/date";
 
 interface PostProps {
   title: string;
@@ -10,11 +11,12 @@ interface PostProps {
   projectUrl: string;
   githubUrl: string;
   slug: string;
+  date: string;
 }
 
 export function Post(props: PostProps) {
-  const { title, content, projectUrl, githubUrl, slug } = props;
-
+  const { title, content, slug, projectUrl, date, githubUrl } = props;
+  const formattedDate = formatDate(date);
   return (
     <article className='max-w-3xl mx-auto lg:px-0 px-8'>
       <div className='flex items-center justify-between mb-6'>
@@ -36,9 +38,10 @@ export function Post(props: PostProps) {
           </LinkPreview>
         </div>
       </div>
+      <p className='text-right pb-4'>{formattedDate}</p>
       <div>
         <Image
-          src={"/projectCover/" + slug + ".png"}
+          src={"/project-cover/" + slug + ".png"}
           alt={title}
           width={800}
           height={600}

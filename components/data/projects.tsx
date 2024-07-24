@@ -6,14 +6,6 @@ export type ProjectProps = {
   coverImage: string;
 };
 
-export const post = {
-  title: "title",
-  content: "content",
-  projectUrl: "sadad",
-  githubUrl: "asdad",
-  slug: "1",
-};
-
 export const PROJECT: ProjectProps[] = [
   {
     name: "Venmo Payments App",
@@ -21,23 +13,23 @@ export const PROJECT: ProjectProps[] = [
     tagline:
       "Pay. Get paid. Shop. Share. Venmo is a digital wallet that makes money easier for everyone from students to small businesses.",
     slug: "venmo-app",
-    coverImage: "/projectCover/noteme.png",
+    coverImage: "/project-cover/noteme.png",
   },
   {
     name: "Medium Clone",
     logo: "/icons/medium.webp",
     tagline:
-      "A blog posting app similar to Medium. Built using Next.js, Hono, Cloudflare Workers, Edge runtime",
+      "A blog posting app similar to Medium. It let user create blogs and view posted blogs. Built using Next.js, Hono, Cloudflare Workers, Edge runtime",
     slug: "medium-clone",
-    coverImage: "/projectCover/summarize.png",
+    coverImage: "/project-cover/summarize.png",
   },
   {
     name: "Sociopedia",
     logo: "/icons/sociopedia.png",
     tagline:
-      "A dynamic social media platform. Share photos, post updates, follow friends, and engage with a vibrant community.",
+      "A dynamic social media platform combination of X and Instagram. Share photos, post updates, follow friends, and engage with a vibrant community.",
     slug: "sociopedia-app",
-    coverImage: "/projectCover/traxpack.png",
+    coverImage: "/project-cover/traxpack.png",
   },
   {
     name: "Youtube Clone",
@@ -45,7 +37,7 @@ export const PROJECT: ProjectProps[] = [
     tagline:
       "A full-featured YouTube clone built with React, TypeScript, and the YouTube API. Search, watch, and explore videos seamlessly.",
     slug: "youtube-clone",
-    coverImage: "/projectCover/yt.png",
+    coverImage: "/project-cover/yt.png",
   },
   {
     name: "Dall-E AI",
@@ -53,15 +45,15 @@ export const PROJECT: ProjectProps[] = [
     tagline:
       "DALL·E is an AI Image Generation Full Stack App that creates realistic images and art from a description in natural language.",
     slug: "dalle-app",
-    coverImage: "/projectCover/noteme.png",
+    coverImage: "/project-cover/noteme.png",
   },
   {
     name: "Pokedex",
     logo: "/icons/pokedex.jpg",
     tagline:
-      "It's a Pokedex where you can search your favorite Pokemons. (React.js, Typescript)",
+      "It's a Pokedex where you can search your favorite Pokemons. It is build using React.js and Typescript.",
     slug: "pokedex",
-    coverImage: "/project-cover/pokedex.jpg",
+    coverImage: "/project-cover/pokedex.png",
   },
   {
     name: "HooBank",
