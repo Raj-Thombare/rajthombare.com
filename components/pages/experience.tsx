@@ -29,9 +29,9 @@ export default function Experience() {
                 <h3 className='text-xl font-semibold'>{data.name}</h3>
                 <p>{data.jobTitle}</p>
                 <time className='text-sm text-zinc-500 mt-2 tracking-widest uppercase'>
-                  {formatDate(data.startDate)} -{" "}
+                  {data.startDate} -{" "}
                   {data.endDate ? (
-                    formatDate(data.endDate)
+                    data.endDate
                   ) : (
                     <span className='text-cyan-500'>Present</span>
                   )}
