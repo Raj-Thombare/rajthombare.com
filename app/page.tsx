@@ -99,7 +99,10 @@ export default function Home() {
         </section>
         <section className='relative grid lg:grid-cols-1 grid-cols-1 mt-7 gap-x-6 items-start justify-items-start'>
           <Slide delay={0.14}>
-            <h1 className='font-incognito font-semibold tracking-tight sm:text-3xl text-xl lg:leading-tight basis-1/2 mb-4 mt-12'>
+            <h1
+              id='experience'
+              className='font-incognito font-semibold tracking-tight sm:text-3xl text-xl lg:leading-tight basis-1/2 mb-4 mt-12'
+            >
               Experience
             </h1>
             <div className='px-4'>
