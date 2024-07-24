@@ -38,11 +38,12 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <body
-        className={`${incognito.variable} ${inter.className} ${gitlabmono.variable} bg-zinc-900 text-white`}
-      >
-        <Appbar />
-        {children}
-        <Footer />
+        className={`${incognito.variable} ${inter.className} ${gitlabmono.variable} bg-zinc-900 text-white`}>
+        <div id='page-container'>
+          <Appbar />
+          <div id='content-wrap'>{children}</div>
+          <Footer />
+        </div>
       </body>
     </html>
   );
