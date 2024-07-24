@@ -73,7 +73,7 @@ export default function Home() {
                     View Resume <BiLinkExternal className='text-base ' />
                   </a>
                   <a
-                    href='https://drive.google.com/file/d/1zAE0f8lAzFauJNYi-AtmBM3P43VMPfxv/export?format=pdf'
+                    href='https://drive.usercontent.google.com/u/0/uc?id=1zAE0f8lAzFauJNYi-AtmBM3P43VMPfxv&export=download'
                     className='flex items-center justify-center text-center  hover:underline bg-gray-800/40  border border-transparent hover:border-zinc-400 rounded-md py-3 text-lg w-1/4'
                     title='Download Resume'
                   >
