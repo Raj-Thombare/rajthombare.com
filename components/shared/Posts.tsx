@@ -19,8 +19,8 @@ export function Post(props: PostProps) {
   const formattedDate = formatDate(date);
   return (
     <article className='max-w-3xl mx-auto lg:px-0 px-8'>
-      <div className='flex items-center justify-between mb-6'>
-        <h1 className='text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-2 sm:mb-0'>
+      <div className='flex flex-col md:flex-row items-center justify-between mb-6'>
+        <h1 className='text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-2 sm:mb-4'>
           {title}
         </h1>
         <div className='flex flex-row gap-x-4'>
@@ -50,8 +50,7 @@ export function Post(props: PostProps) {
       </div>
       <div
         className='sm:text-lg  text-justify text-sm max-w-3xl leading-10 prose prose-p:text-white prose-headings:text-white px-2 py-4 prose-invert'
-        dangerouslySetInnerHTML={{ __html: content }}
-      ></div>
+        dangerouslySetInnerHTML={{ __html: content }}></div>
     </article>
   );
 }

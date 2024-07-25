@@ -2,25 +2,26 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
-
   prefix: "",
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
     extend: {
       fontFamily: {
         incognito: ["var(--incognito)"],
         inter: ["var(--inter)"],
+      },
+      gridTemplateColumns: {
+        custom: "1.5fr 1fr",
+      },
+      screens: {
+        sm: "480px",
+        md: "768px",
+        lg: "976px",
+        xl: "1440px",
       },
       colors: {
         "primary-color": "#FB576F",
@@ -65,9 +66,6 @@ module.exports = {
       boxShadow: {
         "line-light": "rgba(17, 17, 26, 0.1) 0px 1px 0px",
         "line-dark": "rgb(29, 29, 32) 0px 1px 0px",
-      },
-      gridTemplateColumns: {
-        custom: "1.2fr 1fr",
       },
       borderRadius: {
         lg: "var(--radius)",

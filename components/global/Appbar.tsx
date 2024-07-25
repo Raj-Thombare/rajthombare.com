@@ -62,7 +62,7 @@ export default function Appbar() {
       </nav>
       {/* Mobile Menu */}
       <div
-        className={`sm:hidden w-[100%] fixed top-0 right-0 bottom-0 p-0 m-0 flex justify-center items-center h-screen z-50 backdrop-saturate-50 backdrop-blur text-center ${
+        className={`sm:hidden w-[100%] fixed top-0 right-0 bottom-0 p-0 m-0 flex justify-center items-center h-screen z-50 backdrop-saturate-150 backdrop-blur text-center ${
           nav ? "translate-x-0" : "translate-x-full"
         } ease-in-out duration-300`}>
         <div className='fixed top-[25px] right-[35px] text-white md:text-black'>
