@@ -23,6 +23,7 @@ import {
   CFIcon,
   ReduxIcon,
   NodeIcon,
+  RedisIcon,
 } from "@/components/icons";
 
 export type SkillProps = {
@@ -112,6 +113,11 @@ export const DATABASES: SkillProps[] = [
     name: "Prisma",
     icon: <PrismaIcon />,
     link: "https://www.prisma.io/",
+  },
+  {
+    name: "Redis",
+    icon: <RedisIcon />,
+    link: "https://redis.io/",
   },
   {
     name: "MongoDB",
