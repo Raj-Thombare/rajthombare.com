@@ -14,20 +14,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Raj Thombare",
   description: "My Portfolio Website",
-  //   icons: {
-  //     icon: [
-  //       {
-  //         media: "(prefers-color-scheme: light)",
-  //         url: "/logo-light.png",
-  //         href: "/logo-light.png",
-  //       },
-  //       {
-  //         media: "(prefers-color-scheme: dark)",
-  //         url: "/logo-dark.png",
-  //         href: "/logo-dark.png",
-  //       },
-  //     ],
-  //   },
+  icons: "/logo-light.png",
 };
 
 export default function RootLayout({
