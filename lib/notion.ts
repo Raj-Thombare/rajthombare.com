@@ -42,3 +42,34 @@ export const getPageContent = React.cache((pageId: string) => {
         .list({ block_id: pageId })
         .then((res) => res.results as BlockObjectResponse[]);
 });
+
+export const getAllProjects = React.cache(async () => {
+    const databaseId = process.env.NOTION_DATABASE_ID;
+    const response = await notion.databases.query({
+        database_id: databaseId,
+    });
+
+    const projects = await Promise.all(
+        response.results.map(async (page) => {
+            const pageObj = page as any;
+
+            const content = await notion.blocks.children.list({
+                block_id: pageObj.id,
+                page_size: 50,
+            });
+
+            return {
+                title: pageObj.properties.Name.title[0].plain_text,
+                tagline: pageObj.properties.Tagline.rich_text[0].plain_text,
+                projectUrl: pageObj.properties.ProjectUrl.url,
+                githubUrl: pageObj.properties.GithubUrl.url,
+                date: pageObj.properties.Date.date.start,
+                content: content.results,
+                slug: pageObj.properties.Slug.rich_text[0].plain_text,
+                icon: pageObj.properties.Icon.files[0].file.url,
+            };
+        })
+    );
+
+    return projects;
+})

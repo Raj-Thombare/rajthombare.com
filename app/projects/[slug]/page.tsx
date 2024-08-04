@@ -9,7 +9,6 @@ import { Post } from "@/components/shared/Posts";
 
 export default async function Page({ params }: { params: { slug: string } }) {
   const post = await getPageBySlug(params.slug);
-
   if (!post) notFound();
 
   const content = await getPageContent(post.id);

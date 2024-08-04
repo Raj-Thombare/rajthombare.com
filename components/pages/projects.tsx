@@ -3,10 +3,9 @@ import Link from "next/link";
 import PageHeading from "../shared/PageHeading";
 import { Slide } from "../animations/Slide";
 import EmptyState from "../animations/EmptyState";
-import { PROJECT } from "../data/projects";
 import { ProjectWobble } from "../animations/project-wobbler";
 
-export default function Project() {
+export default function Project({ projects }) {
   return (
     <main className='max-w-7xl mx-auto md:px-16 px-6'>
       <PageHeading
@@ -16,25 +15,24 @@ export default function Project() {
       />
 
       <Slide delay={0.1}>
-        {PROJECT.length > 0 ? (
+        {projects.length > 0 ? (
           <section className='grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 mb-12'>
-            {PROJECT.map((project) => (
+            {projects.map((project) => (
               <ProjectWobble key={project.slug}>
                 <Link
                   href={`/projects/${project.slug}`}
                   key={project.slug}
-                  className='flex items-center gap-x-4 bg-primary-bg border border-transparent p-4'
-                >
+                  className='flex items-center gap-x-4 border border-transparent p-4'>
                   <Image
-                    src={project.logo}
+                    src={project.icon}
                     width={50}
                     height={50}
-                    alt={project.name}
+                    alt={project.title}
                     className='bg-zinc-800 rounded-md p-2'
                   />
-                  <div>
+                  <div className='break-all'>
                     <h2 className='text-lg tracking-wide mb-1'>
-                      {project.name}
+                      {project.title}
                     </h2>
                     <div className='text-sm text-zinc-400'>
                       {project.tagline}
