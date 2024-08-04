@@ -7,7 +7,13 @@ const nextConfig = {
         hostname: "api.microlink.io",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "prod-files-secure.s3.us-west-2.amazonaws.com",
+        port: "",
+      },
     ],
+    dangerouslyAllowSVG: true, // Allow SVGs
   },
   reactStrictMode: true,
 };

@@ -1,9 +1,13 @@
 import Projects from "@/components/pages/projects";
+import { getAllProjects } from "@/lib/notion";
 
-export default function Project() {
+export default async function Project() {
+  const projects = await getAllProjects();
+
   return (
     <div className='container mx-auto'>
-      <Projects />
+      <Projects projects={projects} />
     </div>
   );
 }
+

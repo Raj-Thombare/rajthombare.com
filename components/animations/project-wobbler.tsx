@@ -37,10 +37,9 @@ export const ProjectWobble = ({
         transition: "transform 0.1s ease-out",
       }}
       className={cn(
-        "mx-auto w-full  relative overflow-hidden border border-transparent hover:border-cyan-500 rounded-xl",
-        containerClassName,
-      )}
-    >
+        "mx-auto w-full  relative overflow-hidden border border-transparent hover:border-cyan-500 rounded-xl bg-primary-bg",
+        containerClassName
+      )}>
       <motion.div
         style={{
           transform: isHovering
@@ -48,8 +47,7 @@ export const ProjectWobble = ({
             : "translate3d(0px, 0px, 0) scale3d(1, 1, 1)",
           transition: "transform 0.1s ease-out",
         }}
-        className={cn(className)}
-      >
+        className={cn(className)}>
         {children}
       </motion.div>
     </motion.section>
