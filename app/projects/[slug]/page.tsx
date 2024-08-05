@@ -24,6 +24,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
   return (
     <Post
       title={(post.properties.Name as any).title[0].plain_text}
+      coverImage={(post.properties.CoverImage as any).files[0].file.url}
       projectUrl={(post.properties.ProjectUrl as any).url}
       githubUrl={(post.properties.GithubUrl as any).url}
       date={(post.properties.Date as any).date.start}

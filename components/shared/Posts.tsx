@@ -12,10 +12,13 @@ interface PostProps {
   githubUrl: string;
   slug: string;
   date: string;
+  coverImage: string;
 }
 
 export function Post(props: PostProps) {
-  const { title, content, slug, projectUrl, date, githubUrl } = props;
+  const { title, content, slug, projectUrl, date, githubUrl, coverImage } =
+    props;
+
   const formattedDate = formatDate(date);
   return (
     <article className='max-w-3xl mx-auto lg:px-0 px-8'>
@@ -41,7 +44,7 @@ export function Post(props: PostProps) {
       <p className='text-right pb-4'>{formattedDate}</p>
       <div>
         <Image
-          src={"/project-cover/" + slug + ".png"}
+          src={coverImage}
           alt={title}
           width={800}
           height={600}
