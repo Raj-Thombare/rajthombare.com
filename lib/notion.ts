@@ -66,7 +66,7 @@ export const getAllProjects = React.cache(async () => {
                 date: pageObj.properties.Date.date.start,
                 content: content.results,
                 slug: pageObj.properties.Slug.rich_text[0].plain_text,
-                icon: pageObj.properties.Icon.files[0].file.url,
+                icon: pageObj.properties.Icon.url,
             };
         })
     );
