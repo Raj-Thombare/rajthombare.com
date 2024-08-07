@@ -11,7 +11,7 @@ import Social from "@/components/shared/Social";
 
 export default function Home() {
   return (
-    <div id='home' className='container mx-auto'>
+    <div id='home' className='sm:container mx-auto'>
       <div className='relative lg:max-w-7xl mx-auto max-w-3xl md:px-16 px-6'>
         <section className='relative grid lg:grid-cols-custom grid-cols-1 gap-x-6 items-start justify-items-center'>
           <div className='order-1 md:gap-y-20 md:pt-0 pt-4'>
@@ -122,7 +122,7 @@ export default function Home() {
               className='font-incognito font-semibold tracking-tight sm:text-3xl text-xl lg:leading-tight basis-1/2 mb-4 mt-12'>
               Technical Skills
             </h1>
-            <div className='px-4'>
+            <div className='sm:px-4'>
               <Skills />
             </div>
           </Slide>

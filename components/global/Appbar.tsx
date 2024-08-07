@@ -79,17 +79,17 @@ export default function Appbar() {
       </nav>
       {/* Mobile Menu */}
       <div
-        className={`sm:hidden w-full fixed top-0 right-0 bottom-0 p-0 m-0 flex flex-col justify-center items-center h-screen backdrop-saturate-150 backdrop-blur text-center ${
+        className={`sm:hidden w-full fixed top-0 right-0 bottom-0 p-0 m-0 flex flex-col justify-center items-center h-full backdrop-saturate-150 backdrop-blur text-center ${
           nav
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
         } ease-in-out duration-300`}>
-        <div className='flex justify-between mt-6 px-6 w-[100%]'>
-          <div className='flex items-center mb-5'>
-            <span className='mr-4'>
+        <div className='flex justify-between pt-6 px-6 w-[100%]'>
+          <div className='flex items-center'>
+            <span className='mr-3'>
               <BsMenuButtonWide size={30} />
             </span>
-            <p className='font-incognito text-4xl font-extrabold'>MENU</p>
+            <p className='font-incognito text-3xl font-extrabold'>MENU</p>
           </div>
           <div className=' text-white md:text-black'>
             <IoMdClose size={45} onClick={navHandler} />
@@ -102,12 +102,12 @@ export default function Appbar() {
                 key={nav.title}
                 className={`${
                   isActive(nav.link) ? "font-semibold bg-white text-black" : ""
-                }  m-3 p-3 bg-primary-bg rounded border border-white w-[300px]`}>
+                }  m-3 p-3 bg-primary-bg rounded border border-white w-[250px]`}>
                 <Link
                   href={nav.link}
                   className={` ${
                     isActive(nav.link) ? "font-semibold text-black" : ""
-                  } text-4xl font-incognito md:text-black hover:opacity-75`}
+                  } text-3xl font-incognito md:text-black hover:opacity-75`}
                   onClick={navHandler}>
                   {nav.title}
                 </Link>

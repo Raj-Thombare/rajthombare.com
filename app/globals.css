@@ -102,9 +102,11 @@ h4 {
     }
 }
 
-@layer components {
+/* @layer components {
 
     .container {
         @apply w-full mx-auto px-8
     }
 }
+
+*/
