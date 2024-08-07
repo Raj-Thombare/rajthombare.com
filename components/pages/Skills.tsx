@@ -26,7 +26,7 @@ export default function Skills() {
         <div className='relative mx-auto max-w-6xl'>
           <Slide delay={0.14}>
             <div className='mt-5 flex flex-col md:flex-row justify-start items-center'>
-              <p className='font-semibold text-xl text-center md:text-left min-w-[324px]'>
+              <p className='font-semibold text-xl text-center md:text-left sm:min-w-[324px]'>
                 Languages
               </p>
               <div className='mt-2 flex flex-wrap justify-center md:justify-start gap-4 text-xl text-zinc-200'>
@@ -38,7 +38,7 @@ export default function Skills() {
               </div>
             </div>
             <div className='mt-5 flex flex-col md:flex-row justify-start items-center'>
-              <p className='font-semibold text-xl text-center md:text-left min-w-[324px]'>
+              <p className='font-semibold text-xl text-center md:text-left sm:min-w-[324px]'>
                 Libraries and Frameworks
               </p>
               <div className='mt-2 flex flex-wrap gap-4 text-xl justify-center md:justify-start text-zinc-200'>
@@ -55,7 +55,7 @@ export default function Skills() {
               </div>
             </div>
             <div className='mt-5 flex flex-col md:flex-row justify-start items-center'>
-              <p className='font-semibold text-xl text-center md:text-left min-w-[324px]'>
+              <p className='font-semibold text-xl text-center md:text-left sm:min-w-[324px]'>
                 Databases and ORM
               </p>
               <div className='mt-2 flex flex-wrap gap-4 justify-center md:justify-start text-zinc-200'>
@@ -72,7 +72,7 @@ export default function Skills() {
               </div>
             </div>
             <div className='mt-5 flex flex-col md:flex-row justify-start items-center'>
-              <p className='text-xl font-semibold text-center md:text-left min-w-[324px]'>
+              <p className='text-xl font-semibold text-center md:text-left sm:min-w-[324px]'>
                 Devops and Tools
               </p>
               <div className='mt-2 flex flex-wrap gap-4 justify-center md:justify-start text-zinc-200'>
