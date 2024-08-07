@@ -42,7 +42,7 @@ export default function Appbar() {
             </h1>
           </div>
         </Link>
-        <ul className='hidden md:flex gap-x-8'>
+        <ul className='hidden sm:flex gap-x-8'>
           {navLinks.slice(0, 4).map((nav) => (
             <li key={nav.title}>
               <Link
@@ -56,7 +56,7 @@ export default function Appbar() {
           ))}
         </ul>
 
-        <div className='md:hidden cursor-pointer'>
+        <div className='sm:hidden cursor-pointer'>
           <BiMenuAltRight size={45} onClick={navHandler} />
         </div>
       </nav>

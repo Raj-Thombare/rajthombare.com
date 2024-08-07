@@ -16,10 +16,10 @@ export default function Home() {
         <section className='relative grid lg:grid-cols-custom grid-cols-1 gap-x-6 items-start justify-items-center'>
           <div className='order-1 md:gap-y-20 md:pt-0 pt-4'>
             <Slide delay={0.14}>
-              <h1 className='font-incognito font-semibold tracking-tight sm:text-5xl text-2xl lg:leading-tight basis-1/2 mb-2'>
+              <h1 className='font-incognito font-semibold tracking-tight sm:text-4xl md:text-5xl text-3xl lg:leading-tight basis-1/2 mb-2'>
                 Hey, I&apos;m Raj Thombare
               </h1>
-              <h2 className='font-incognito font-semibold tracking-tight sm:text-4xl text-2xl lg:leading-tight basis-1/2 mb-4'>
+              <h2 className='font-incognito font-semibold tracking-tight sm:text-3xl md:text-4xl text-2xl lg:leading-tight basis-1/2 mb-4'>
                 Full Stack Software Engineer
               </h2>
               <p className={"text-gray-200/80"}>
@@ -38,8 +38,7 @@ export default function Home() {
               <br />
               <WobbleCard
                 containerClassName='col-span-1 lg:col-span-2 h-full bg-cyan-800/90 min-h-fit lg:min-h-full'
-                className=''
-              >
+                className=''>
                 <div className='w-full flex items-center justify-center '>
                   If you ever see me out and about, feel free to stop by and say
                   hello! Let&apos;s catch up over a coffee and dive into the
@@ -50,7 +49,7 @@ export default function Home() {
             </Slide>
           </div>
 
-          <aside className='flex flex-col lg:justify-self-center justify-self-start gap-y-8 lg:order-1 order-none mb-12'>
+          <aside className='flex flex-col lg:justify-self-center justify-self-center gap-y-8 lg:order-1 order-none mb-12'>
             <Slide delay={0.1}>
               <ImageWobble>
                 <Image
@@ -68,23 +67,20 @@ export default function Home() {
                     href='https://drive.google.com/file/d/1zAE0f8lAzFauJNYi-AtmBM3P43VMPfxv/view?usp=sharing'
                     rel='raj'
                     target='_blank'
-                    className='flex items-center justify-center text-center gap-x-2 basis-[90%] bg-gray-800/40 border border-transparent hover:border-zinc-400  rounded-md py-2 text-lg font-incognito font-semibold'
-                  >
+                    className='flex items-center justify-center text-center gap-x-2 basis-[90%] bg-gray-800/40 border border-transparent hover:border-zinc-400  rounded-md py-2 text-lg font-incognito font-semibold'>
                     View Resume <BiLinkExternal className='text-base ' />
                   </a>
                   <a
                     href='https://drive.usercontent.google.com/u/0/uc?id=1zAE0f8lAzFauJNYi-AtmBM3P43VMPfxv&export=download'
                     className='flex items-center justify-center text-center  hover:underline bg-gray-800/40  border border-transparent hover:border-zinc-400 rounded-md py-3 text-lg w-1/4'
-                    title='Download Resume'
-                  >
+                    title='Download Resume'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       fill='none'
                       viewBox='0 0 24 24'
                       strokeWidth='1.5'
                       stroke='red'
-                      className='w-6 h-6'
-                    >
+                      className='w-6 h-6'>
                       <path
                         strokeLinecap='round'
                         strokeLinejoin='round'
@@ -101,8 +97,7 @@ export default function Home() {
           <Slide delay={0.14}>
             <h1
               id='experience'
-              className='font-incognito font-semibold tracking-tight sm:text-3xl text-xl lg:leading-tight basis-1/2 mb-4 mt-12'
-            >
+              className='font-incognito font-semibold tracking-tight sm:text-3xl text-xl lg:leading-tight basis-1/2 mb-4 mt-12'>
               Experience
             </h1>
             <div className='px-4'>
@@ -113,8 +108,7 @@ export default function Home() {
           <Slide delay={0.18}>
             <h1
               id='education'
-              className='font-incognito font-semibold tracking-tight sm:text-3xl text-xl lg:leading-tight basis-1/2 mb-4 mt-12'
-            >
+              className='font-incognito font-semibold tracking-tight sm:text-3xl text-xl lg:leading-tight basis-1/2 mb-4 mt-12'>
               Education
             </h1>
             <div className='px-4'>
@@ -125,8 +119,7 @@ export default function Home() {
           <Slide delay={0.18}>
             <h1
               id='skills'
-              className='font-incognito font-semibold tracking-tight sm:text-3xl text-xl lg:leading-tight basis-1/2 mb-4 mt-12'
-            >
+              className='font-incognito font-semibold tracking-tight sm:text-3xl text-xl lg:leading-tight basis-1/2 mb-4 mt-12'>
               Technical Skills
             </h1>
             <div className='px-4'>

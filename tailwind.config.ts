@@ -11,6 +11,13 @@ const config: Config = {
   ],
   prefix: "",
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     extend: {
       fontFamily: {
         incognito: ["var(--incognito)"],
@@ -18,12 +25,6 @@ const config: Config = {
       },
       gridTemplateColumns: {
         custom: "1.5fr 1fr",
-      },
-      screens: {
-        sm: "480px",
-        md: "768px",
-        lg: "976px",
-        xl: "1440px",
       },
       colors: {
         "primary-color": "#FB576F",

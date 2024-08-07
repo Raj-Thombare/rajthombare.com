@@ -105,6 +105,6 @@ h4 {
 @layer components {
 
     .container {
-        @apply w-full mx-auto
+        @apply w-full mx-auto px-8
     }
 }
