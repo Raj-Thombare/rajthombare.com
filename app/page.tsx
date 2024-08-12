@@ -1,5 +1,5 @@
 import Image from "next/image";
-import MyPicture from "../public/profile_raj.jpg";
+import MyPicture from "@/public/profile_raj.jpg";
 import { ImageWobble } from "@/components/animations/ImageWobble";
 import { Slide } from "@/components/animations/Slide";
 import { WobbleCard } from "@/components/animations/WobbleCard";
@@ -8,6 +8,7 @@ import Experience from "@/components/pages/experience";
 import Education from "@/components/pages/education";
 import Skills from "@/components/pages/Skills";
 import Social from "@/components/shared/Social";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -63,14 +64,14 @@ export default function Home() {
               </ImageWobble>
               <div className='flex flex-col text-center gap-y-4'>
                 <div className='flex items-center gap-x-3'>
-                  <a
+                  <Link
                     href='https://drive.google.com/file/d/1zAE0f8lAzFauJNYi-AtmBM3P43VMPfxv/view?usp=sharing'
                     rel='raj'
                     target='_blank'
                     className='flex items-center justify-center text-center gap-x-2 basis-[90%] bg-gray-800/40 border border-transparent hover:border-zinc-400  rounded-md py-2 text-lg font-incognito font-semibold'>
                     View Resume <BiLinkExternal className='text-base ' />
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href='https://drive.usercontent.google.com/u/0/uc?id=1zAE0f8lAzFauJNYi-AtmBM3P43VMPfxv&export=download'
                     className='flex items-center justify-center text-center  hover:underline bg-gray-800/40  border border-transparent hover:border-zinc-400 rounded-md py-3 text-lg w-1/4'
                     title='Download Resume'>
@@ -87,7 +88,7 @@ export default function Home() {
                         d='M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m.75 12 3 3m0 0 3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z'
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </Slide>
