@@ -20,7 +20,7 @@ const navLinks = [
 export default function Appbar() {
   const [nav, setNav] = useState(false);
   const pathname = usePathname();
-
+  console.log(pathname);
   const navHandler = () => {
     setNav((status) => !status);
   };
@@ -65,7 +65,7 @@ export default function Appbar() {
               <Link
                 href={nav.link}
                 className={`${
-                  pathname === nav.link ? "font-semibold" : "opacity-75"
+                  isActive(nav.link) ? "font-semibold" : "opacity-75"
                 } font-incognito text-white hover:text-cyan-600 duration-300 text-base hover:opacity-100`}>
                 {nav.title}
               </Link>
@@ -102,10 +102,10 @@ export default function Appbar() {
                 key={nav.title}
                 className={`${
                   isActive(nav.link) ? "font-semibold bg-white text-black" : ""
-                }  m-3 p-3 bg-primary-bg rounded border border-white w-[250px]`}>
+                } m-3 p-3 bg-primary-bg rounded border border-white w-[250px]`}>
                 <Link
                   href={nav.link}
-                  className={` ${
+                  className={`${
                     isActive(nav.link) ? "font-semibold text-black" : ""
                   } text-3xl font-incognito md:text-black hover:opacity-75`}
                   onClick={navHandler}>
