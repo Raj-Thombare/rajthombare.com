@@ -24,6 +24,7 @@ import {
   ReduxIcon,
   NodeIcon,
   RedisIcon,
+  NginxIcon,
 } from "@/components/icons";
 
 export type SkillProps = {
@@ -151,6 +152,11 @@ export const DEVOPS: SkillProps[] = [
     name: "Cloudflare",
     icon: <CFIcon />,
     link: "https://www.cloudflare.com/",
+  },
+  {
+    name: "Nginx",
+    icon: <NginxIcon />,
+    link: "https://nginx.org/en/",
   },
   {
     name: "NPM",
