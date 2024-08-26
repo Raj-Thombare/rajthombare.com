@@ -20,7 +20,7 @@ const navLinks = [
 export default function Appbar() {
   const [nav, setNav] = useState(false);
   const pathname = usePathname();
-  console.log(pathname);
+
   const navHandler = () => {
     setNav((status) => !status);
   };

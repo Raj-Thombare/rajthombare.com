@@ -26,3 +26,4 @@ export * from './npm';
 export * from './html';
 export * from './css';
 export * from './node';
+export * from './nginx';
