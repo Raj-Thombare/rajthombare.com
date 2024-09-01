@@ -1,5 +1,8 @@
-import type { Metadata } from "next";
+"use client";
+
+import { usePathname } from "next/navigation";
 import { Inter } from "next/font/google";
+import Head from "next/head";
 import "./globals.css";
 import { incognito, gitlabmono } from "@/components/fonts/fonts";
 import Appbar from "@/components/global/Appbar";
@@ -11,24 +14,26 @@ const inter = Inter({
   variable: "--inter",
 });
 
-export const metadata: Metadata = {
-  title: "Raj Thombare",
-  description: "My Portfolio Website",
-  icons: "/logo-light.png",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const pathname = usePathname();
+  const baseUrl =
+    process.env.NEXT_PUBLIC_BASE_URL || "https://www.rajthombare.xyz";
+  const canonicalUrl = `${baseUrl}${pathname}`;
+
   return (
     <html lang='en' suppressHydrationWarning>
+      <Head>
+        <link rel='canonical' href={canonicalUrl} />
+      </Head>
       <body
         className={`${incognito.variable} ${inter.className} ${gitlabmono.variable} bg-zinc-900 text-white`}>
         <div id='page-container'>
           <Appbar />
-          <div id='content-wrap'>{children}</div>
+          <main id='content-wrap'>{children}</main>
           <Footer />
         </div>
       </body>
