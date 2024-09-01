@@ -24,7 +24,6 @@ export default function RootLayout({
     process.env.NEXT_PUBLIC_BASE_URL || "https://www.rajthombare.xyz";
   const canonicalUrl = `${baseUrl}${pathname}`;
 
-  console.log(canonicalUrl);
   return (
     <html lang='en' suppressHydrationWarning>
       <Head>

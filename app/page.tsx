@@ -65,14 +65,14 @@ export default function Home() {
               <div className='flex flex-col text-center gap-y-4'>
                 <div className='flex items-center gap-x-3'>
                   <Link
-                    href='https://drive.google.com/file/d/1zAE0f8lAzFauJNYi-AtmBM3P43VMPfxv/view?usp=sharing'
+                    href={process.env.NEXT_PUBLIC_VIEW_RESUME}
                     rel='raj'
                     target='_blank'
                     className='flex items-center justify-center text-center gap-x-2 basis-[90%] bg-gray-800/40 border border-transparent hover:border-zinc-400  rounded-md py-2 text-lg font-incognito font-semibold'>
                     View Resume <BiLinkExternal className='text-base ' />
                   </Link>
                   <Link
-                    href='https://drive.usercontent.google.com/u/0/uc?id=1zAE0f8lAzFauJNYi-AtmBM3P43VMPfxv&export=download'
+                    href={process.env.NEXT_PUBLIC_DOWNLOAD_RESUME}
                     className='flex items-center justify-center text-center  hover:underline bg-gray-800/40  border border-transparent hover:border-zinc-400 rounded-md py-3 text-lg w-1/4'
                     title='Download Resume'>
                     <svg

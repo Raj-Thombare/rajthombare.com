@@ -21,7 +21,7 @@ export default function Footer() {
         <div className='flex flex-col lg:items-end items-center lg:text-start text-center'>
           <small className='text-zinc-400 font-incognito'>
             Copyright &copy;{" "}
-            <Link className='underline' href='https://rajthombare.vercel.app'>
+            <Link className='underline' href={process.env.NEXT_PUBLIC_BASE_URL}>
               Raj Thombare
             </Link>{" "}
             {new Date().getFullYear()} | All rights Reserved
