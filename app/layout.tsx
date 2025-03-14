@@ -8,10 +8,12 @@ import { incognito, gitlabmono } from "@/components/fonts/fonts";
 import Appbar from "@/components/global/Appbar";
 import Footer from "@/components/global/Footer";
 
-const inter = Inter({
+import { Bricolage_Grotesque } from "next/font/google";
+
+const bricolageGrotesque = Bricolage_Grotesque({
   subsets: ["latin"],
   display: "swap",
-  variable: "--inter",
+  variable: "--font-bricolage-grotesque",
 });
 
 export default function RootLayout({
@@ -30,11 +32,11 @@ export default function RootLayout({
         <link rel='canonical' href={canonicalUrl} />
       </Head>
       <body
-        className={`${incognito.variable} ${inter.className} ${gitlabmono.variable} bg-zinc-900 text-white`}>
+        className={`${bricolageGrotesque.variable} ${bricolageGrotesque.className} ${bricolageGrotesque.variable} bg-zinc-900 text-white`}>
         <div id='page-container'>
-          <Appbar />
+          {/* <Appbar /> */}
           <main id='content-wrap'>{children}</main>
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </body>
     </html>
